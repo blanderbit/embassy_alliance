@@ -1,0 +1,28 @@
+.white{
+    .md-button-content {
+        color: white!important;
+        font-weight: 400;
+    }
+}
+
+    audio:not(.md-image), 
+    canvas:not(.md-image), 
+    embed:not(.md-image), 
+    iframe:not(.md-image), 
+    //img:not(.md-image), 
+    object:not(.md-image), 
+    video:not(.md-image) {
+        height: 100%!important;
+    }
+
+.md-toolbar.md-theme-default.md-primary .md-icon {
+    color: #fff!important;
+}
+
+.md-toolbar.md-theme-default.md-primary .md-title, .md-toolbar.md-theme-default.md-primary .md-display-1, .md-toolbar.md-theme-default.md-primary .md-display-2 {
+    color: #fff!important;
+}
+
+.md-app-internal-drawer, .md-app-side-drawer .md-app-container {
+    min-height: 100vh;
+}

@@ -1,0 +1,1238 @@
+{
+    "download": "Download",
+    "download_form": "Download form",
+    "download_rules": "Download the camp rules",
+    "drag_files_here": "Drag the picture here or click to choose",
+    "logout": "Log Out",
+    "days": "Days",
+    "camp_details_link": "Read more",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "settings": "Settings",
+    "links": {
+        "home": "Home",
+        "about": "About",
+        "english": "English version",
+        "russian": "Russian version"
+    },
+    "home": {
+        "title": "Welcome",
+        "introduction": "This is an introduction in Russian."
+    },
+    "about": {
+        "title": "About",
+        "introduction": "This page is made to give you more informations. RU",
+        "main_description": "In the summer camp Embassy English held in Kuala Lumpur, the capital of Malaysia, teenagers immerse themselves in the interactive reality show with its daily quests and team buildings made to improve their English language proficiency, as well as social and communication skills. English express learning courses will significantly improve language proficiency while leisure weekend days will be filled with exciting trips and excursions.",
+        "meet_team": "Meet the team",
+        "blog_articles": "What's important",
+        "team": [
+            {
+                "head": "Madina",
+                "body": "Operation manager",
+                "src": "/img/foto1.png"
+            },
+            {
+                "head": "Polina",
+                "body": "Sales manager",
+                "src": "/img/foto2.png"
+            },
+            {
+                "head": "Michael",
+                "body": "CEO",
+                "src": "/img/foto3.png"
+            }
+        ],
+        "b12": {
+            "header": "Participant's Reviews",
+            "button": "Read the reviews"
+        },
+        "b5_2": {
+            "header": "Upcoming Camps"
+        },
+        "b10": {
+            "header": "Our principles and values",
+            "description": "All of our boarding and summer camps are developed with these principles and values in mind to deliver holistic skill, body and mind development to all the participants.",
+            "list": [
+                {
+                    "head": "We believe education environment should be safe, engaging and fun and build all our camps with this principle as a base component.",
+                    "body": ""
+                },
+                {
+                    "head": "We believe that sports play a very important role in teenage development.",
+                    "body": "It's scientifically proven that an active lifestyle makes a happier, more productive individuals. Having moderate sport activity modules and active team buildings on a daily basis make the camp time absolutely awesome for participants."
+                },
+                {
+                    "head": "We believe that a good camp leader is our road to success",
+                    "body": "We find professional leaders with big hears and provide them further training to make the camps an absolute success. Most of our camp leaders have worked with us for many years and absolutely enjoy to see results in youth they develop."
+                },
+                {
+                    "head": "We believe that social skills and ability to communicate effectively are crucial in today's society",
+                    "body": "We include components that promote these abilities in all of our boarding and summer camps."
+                },
+                {
+                    "head": "We believe in balanced nutrition and make sure that buffet tables in our boarding camps are filled with a good variety of healthy foods."
+                }
+            ]
+        },
+        "b13": {
+            "header": "Our Social Media Channels"
+        }
+    },
+    "form": {
+        "incomplete": "Incomplete",
+        "upload": "Upload",
+        "password": "Password",
+        "password_repeat": "Repeat password",
+        "login": "Log In",
+        "new_order": "New Order",
+        "login_register": "User Log-in/Register",
+        "select_product": "Select the Language Camp",
+        "please_select": "Please Select",
+        "select_variation": "Select Suitable Accomodation",
+        "select_participants_country": "Select participant's country",
+        "participant_info_header": "Participant's information",
+        "cancel": "Cancel",
+        "send": "Send",
+        "years": "years",
+        "phone_placeholder": "Phone: +1 9XX XXX XXXX",
+        "phone": "Phone",
+        "first_name": "First name",
+        "last_name": "Last name",
+        "email": "e-mail",
+        "message": "Your message here",
+        "fill_up_the_form": "",
+        "contact_form": "Send your request",
+        "contact_form_complete": "Thank you for your enquiry! Our consultant from the Educational Departament will get back to you in awhile.",
+        "age": "Child's age",
+        "close": "Close",
+        "save": "Save",
+        "pay": "Pay now",
+        "send_request": "Send a request",
+        "pay_later": "Оплатить позже",
+        "show": "Показать",
+        "download": "Скачать",
+        "payment": "Оплата",
+        "user_registration": "New user registration",
+        "logging_in": "Logging in...",
+        "browse": "Browse",
+        "continue": "Continue",
+        "next": "Next",
+        "select_addons": "Available options",
+        "add_participant": "Participant info",
+        "add_parent": "Parent/guardian info",
+        "back": "Back",
+        "register": "Register",
+        "participant_name": "Participant name",
+        "complete_register": "Complete",
+        "complete_registration": "Завершение регистрации участника"
+    },
+    "landingCommon": {
+        "modals": {
+            "inquire": {
+                "header": "Price of the \"%{name}\" program",
+                "header2": "The price includes"
+            }
+        },
+        "about_school_accommodation": "At King Henry VIII school there are two separate student dormitories, one for boys and one for girls. Several types of accommodation are available: single, double, triple and quad rooms. Single and double rooms are equipped with private bathroom. Triple and quadruple rooms have a bathroom located on the floor. Each floor has:",
+        "about_school_desc": "The International British School, King Henry VIII College Malaysia. The parent school is Christ College Brecon and it has almost a 5-century history. It is one of the most prestigious educational institutions in the UK. The branch of the school in Malaysia was opened in 2018 in the safe and modern hi-tech town of Cyberjaya. The town is only a 25-minute drive from Kuala Lumpur or the airport. The school is a well-known educational institution with an excellent reputation both in the UK and Malaysia.",
+        "security_blocks": [
+            {
+                "body": "Accompanying children by group leader from the airport"
+            },
+            {
+                "body": "Two separate student dormitories, one for boys and one for girls"
+            },
+            {
+                "body": "Closed guarded territory on the basis of the British School"
+            },
+            {
+                "body": "Accompanying children by camp counselors during excursions and walks around the city"
+            }
+        ],
+        "prizes": {
+            "main_header": "Exciting prizes for participants",
+            "main_desc": "Contest winners get gold coins (for 150 points) and silver coins (for 100 points) as prizes. Children can exchange the coins to various services, goods or souvenirs at the end of the programme. The coins are the currency of the camp and like real money can be exchanged, borrowed or even lost.",
+            "main_header2": "The main goal - 3 super prizes",
+            "main_desc2": "Only those children who have the largest number of unspent coins earned during the contests by the end of the month will be able to get prizes. A flight in a three-seater helicopter above Kuala Lumpur and Petronas Twin Towers.",
+            "first": {
+                "header": "Helicopter flight or trip to Malaysia",
+                "body": "A flight in a helicopter above Kuala Lumpur and Petronas Twin Towers. Or Holiday in Kuala Lumpur for 6 days 5 nights for parents"
+            },
+            "second": {
+                "header": "Dinner in KL Tower or trip to Malaysia",
+                "body": "Dinner for 2 in revolving Restaurant in KL Tower. Or Holiday in Kuala Lumpur for 4 days 3 nights for parents"
+            },
+            "third": {
+                "header": "Twin Towers visit or trip to Malaysia",
+                "body": "Ticket for 2 pax to Petronas Twin Towers, Bridge on 41th floor and observation deck on 86th floor. Or Holiday in Kuala Lumpur for 3 days 2 nights for parents"
+            }
+        },
+        "buttons": {
+            "make_order": "Send a request",
+            "inquire": "Check the price",
+            "get_prize": "Get Discount!"
+        },
+        "promo": {
+            "header": "Our promo",
+            "desc1": "Get your 50% discount for full board till ",
+            "desc2": "(full cost 150 USD) now!"
+        },
+        "fake_counter": [
+            {
+                "img": "/img/b02_img1.png",
+                "p1": "11 years’ experience in educating ",
+                "p2": "and training children"
+            },
+            {
+                "img": "/img/b02_img2.png",
+                "p1": "Over 4,000 participants",
+                "p2": "of our summer camps"
+            },
+            {
+                "img": "/img/b02_img3.png",
+                "p1": "24/7 security",
+                "p2": "and control"
+            }
+        ]
+    },
+    "landing": {
+        "modals": {
+            "inquire": {
+                "items": [
+                    {
+                        "body": "Accommodation in the residence"
+                    },
+                    {
+                        "body": "Transfers"
+                    },
+                    {
+                        "body": "Breakfasts"
+                    },
+                    {
+                        "body": "English Language Courses"
+                    },
+                    {
+                        "body": "Everyday games"
+                    },
+                    {
+                        "body": "Kuala Lumpur City Tour"
+                    },
+                    {
+                        "body": "Trip to the “Petrosains”"
+                    },
+                    {
+                        "body": "Batu Caves Tour"
+                    },
+                    {
+                        "body": "Tour to Putrajaya"
+                    },
+                    {
+                        "body": "Fireflies River and Monkey Hill tour"
+                    },
+                    {
+                        "body": "Free SIM-Card"
+                    },
+                    {
+                        "body": "Souvenirs"
+                    },
+                    {
+                        "body": "Prizes and gifts"
+                    },
+                    {
+                        "body": "Coordinators and group leaders"
+                    },
+                    {
+                        "body": "Closing party"
+                    },
+                    {
+                        "body": "Additional elective classes"
+                    }
+                ]
+            }
+        },
+        "b1": {
+            "camp": "International language camp",
+            "dates": "7th July  - 4th August 2019",
+            "age": "Ages",
+            "years": "years old",
+            "capture": "Invest in your child’s future right now to make your child happy and successful!"
+        },
+        "b5": {
+            "header": "Main goals of the program",
+            "desc": "At Embassy English Summer language camp in Malaysia your child will be immersed in an interactive reality show full of lots of challenges and team-building activities aimed to improve their English. The interactive course breaks down the psychological barrier to speaking freely through an exciting programme that also develops intellect and leadership skills. Your children will enjoy exciting sightseeing trips at the weekends, too.",
+            "items": [
+                {
+                    "head": "Improve English language skills",
+                    "body": "fully immersing in the English-speaking environment"
+                },
+                {
+                    "head": "Develop logic and creative thinking",
+                    "body": "in participants as a team and individually"
+                },
+                {
+                    "head": "Improve leadership skills",
+                    "body": "in each participant with daily rounds of team-building activities"
+                },
+                {
+                    "head": "Develop willpower and punctuality",
+                    "body": "of participants as a team and individually"
+                },
+                {
+                    "head": "Become more independent",
+                    "body": "Each child has a chance to develop new skills"
+                },
+                {
+                    "head": "Explore Malaysia's beauty",
+                    "body": "and its nature and thriving metropolitan cities"
+                },
+                {
+                    "head": "To spend an unforgettable summer holiday...",
+                    "body": ""
+                }
+            ]
+        },
+        "b5_2": {
+            "header1": "A coordinated approach is a core feature of our camp. During 11 years we have created the perfect conditions for educating your children.",
+            "header2": "We want your children to become high achievers.",
+            "header3": "The focus of Embassy English is safety in everything",
+            "header4": "Our group leaders take care of your children 24/7 and find an individual approach to each child."
+        },
+        "b7": {
+            "header": "Where is the summer camp located in 2019?"
+        },
+        "b8": {
+            "s1": {
+                "header": "Accommodation in summer camp",
+                "items": [
+                    {
+                        "item": "Fully equipped kitchen (fridge, microwave, stove and necessary utensils)"
+                    },
+                    {
+                        "item": "Dining area"
+                    },
+                    {
+                        "item": "Laundry"
+                    },
+                    {
+                        "item": "Rest zone"
+                    },
+                    {
+                        "item": "Area with table tennis"
+                    }
+                ]
+            },
+            "s2": {
+                "header": "Training program",
+                "items": [
+                    {
+                        "item": "20 hours of English classes per week from Monday to Friday"
+                    },
+                    {
+                        "item": "Highly qualified teachers from Britain, the US, Canada, Australia and others"
+                    },
+                    {
+                        "item": "Daily quests and team-building activities to develop logic and leadership skills"
+                    },
+                    {
+                        "item": "Swimming classes 2 times per week"
+                    },
+                    {
+                        "item": "Football trainings 1 time per week"
+                    },
+                    {
+                        "item": "Dancing classes 3 times per week "
+                    },
+                    {
+                        "item": "Yoga classes 2 times per week"
+                    }
+                ]
+            },
+            "s3": {
+                "header": "Entertainment program and sightseeing trips",
+                "items": [
+                    {
+                        "item": "Daily quests and team-building activities"
+                    },
+                    {
+                        "item": "Kuala Lumpur city tour"
+                    },
+                    {
+                        "item": "Visit to the chocolate factory"
+                    },
+                    {
+                        "item": "The art of Batik, workshop tour"
+                    },
+                    {
+                        "item": "Visit to Petrosains Discovery Centre"
+                    },
+                    {
+                        "item": "Tour to Batu Caves"
+                    },
+                    {
+                        "item": "Tour to Putrajaya"
+                    },
+                    {
+                        "item": "Fireflies river tour"
+                    },
+                    {
+                        "item": "Tour to monkey hill"
+                    }
+                ]
+            }
+        },
+        "b9": {
+            "header": "Check out our Embassy English 2018 video"
+        },
+        "b10": {
+            "header": "Price includes",
+            "items": [
+                {
+                    "head": "Accommodation",
+                    "body": "in the residence of the international British School King Henry VII"
+                },
+                {
+                    "head": "Breakfasts",
+                    "body": "full board, lunches and dinners for USD 150"
+                },
+                {
+                    "head": "Transfer",
+                    "body": "airport - hotel - airport"
+                },
+                {
+                    "head": "English Language Courses",
+                    "body": "Monday to Friday – 25 hours a week"
+                },
+                {
+                    "head": "Everyday games",
+                    "body": "mega quests, team-building"
+                },
+                {
+                    "head": "Kuala Lumpur City Tour",
+                    "body": " "
+                },
+                {
+                    "head": "Trip to the “Petrosains” museum",
+                    "body": "entrance fees are included"
+                },
+                {
+                    "head": "Tour to the city of Putrajaya",
+                    "body": ""
+                },
+                {
+                    "head": "Fireflies River and Monkey Hill tour",
+                    "body": "entrance fees are included"
+                },
+                {
+                    "head": "Free SIM",
+                    "body": " "
+                },
+                {
+                    "head": "Souvenirs",
+                    "body": " "
+                },
+                {
+                    "head": "Prizes and gifts ",
+                    "body": "for participation in competitions"
+                },
+                {
+                    "head": "Coordinators and group leaders",
+                    "body": "for the full duration of program"
+                },
+                {
+                    "head": "Closing party",
+                    "body": " "
+                },
+                {
+                    "head": "Additional elective classes",
+                    "body": "swimming, yoga, football"
+                },
+                {
+                    "head": "Batu Caves Tour",
+                    "body": " "
+                }
+            ]
+        },
+        "b10_2": {
+            "header": "reasons to join Embassy English"
+        },
+        "b11": {
+            "header": "Video reviews",
+            "items": [
+                {
+                    "src": "https://www.youtube.com/embed/xF_oQFfFetQ"
+                },
+                {
+                    "src": "https://www.youtube.com/embed/MdH6WNQkV_Y"
+                }
+            ]
+        },
+        "b12": {
+            "header": "More than 200 reviews",
+            "button": "Read reviews"
+        },
+        "b13": {
+            "header": "Act today to make your child successful tomorrow",
+            "desc": "Apply for a free consultation to help you choose your suitable options. It will only take 20 minutes. Leave a query and our manager will contact you."
+        },
+        "comments": [
+            {
+                "name": "Alexandra (Rostov, Russia)",
+                "text": "I could hardly recognize my child! He became more independent and more eager to learn English. School teachers have noticed that Arthur considerably improved his English",
+                "class": "fnt-smaller-sm",
+                "avatar": "/img/female_avatar.jpeg"
+            },
+            {
+                "name": "Guzel (Kazan, Russia)",
+                "text": "My son spent a wonderful month without computer games. He made friends with children from other countries, and now they keep in touch over Skype and speak English.",
+                "class": "fnt-smaller-sm",
+                "avatar": "/img/female_avatar.jpeg"
+            },
+            {
+                "name": "Asiya (Almaty, Kazakhstan)",
+                "text": "My child’s safety is top priority for me. At Embassy English camp group leaders were staying with children around the clock, and uploaded photos of how the children spent the day to the parents’ online group",
+                "class": "fnt-smaller-sm",
+                "avatar": "/img/female_avatar.jpeg"
+            },
+            {
+                "name": "Dinara (Tashkent, Uzbekistan)",
+                "text": "It was for the first time that my daughter attended the camp and she was so much impressed by her stay there!",
+                "class": "fnt-smaller-sm",
+                "avatar": "/img/female_avatar.jpeg"
+            }
+        ],
+        "description": "Description",
+        "title": "Embassy English Camp 2019",
+        "reasons_to_join": [
+            {
+                "head": "Motivation",
+                "body": "Building motivation is fun!  We use systematic self-monitoring techniques to guide campers to better habits that also builds motivation. There is a daily reward system giving out to the winner team by point basis for team buildings and games. Participant needs to accumulate the points in order to win the grand prize. They are rewarding in the form of \"gold\" (150 points), \"silver\" (100 points) and \"bronze\" (50 points). However, they are able to spend the points during the camp, till the end of the day, Grand Prize only goes to the highest points of the first three teams. This point system able to test their capability on analyzing and also encourage them to learn more."
+            },
+            {
+                "head": "Improve English level",
+                "body": "Our highly effective English learning program is devised by professional teachers from Australia, America, Britain and Canada, and they help the children to advance and develop their English during their stay at the summer camp. The learning process at the camp is one of interactive and creative activity in an international environment of friendly peers. Students will cover one level of English within one month at the camp, which normally takes them one academic year at school."
+            },
+            {
+                "head": "Safe country",
+                "body": "Malaysia is one of the safest countries in the world to visit. There are no natural disasters like earthquakes, floods or volcano eruptions. Malaysia is a Muslim country, but this does not mean that other religions or cultures are afflicted. Chinese, Indian, and Korean people make it a country of cultural diversity turning Malaysia into a truly multicultural destination."
+            },
+            {
+                "head": "British School",
+                "body": "The International British School, King Henry VIII College Malaysia. The parent school is Christ College Brecon and it has almost a 5-century history. It is one of the most prestigious educational institutions in the UK. The branch of the school in Malaysia was opened in 2018 in the safe and modern hi-tech town of Cyberjaya."
+            },
+            {
+                "head": "Business trainings",
+                "body": "Teaching children about business at a young age is important for the future of business as a whole. When kids are taught the specific lessons of money management and organizational skills, they can apply their skills towards building a business for themselves, but they can also apply the skills they have learned to their personal lives. Business trainers will teach them in an interactive process the most important and fundamental business skills and ideas."
+            },
+            {
+                "head": "Physically activities",
+                "body": "Fact that teenagers spend a lot of time indoor and mostly sit in front of electronic devices. Summer camp gives a wonderful opportunity to spend one month in active mode. In our programs, participants will join sports activities such as swimming, football, tennis, gym, dancing, and active games."
+            },
+            {
+                "head": "Develop leader skills",
+                "body": "Summer camp Embassy English combines unforgettable holidays, interactive learning of English and development of skills that every successful person should have. In our camp, children learn to set the right goals and clear understanding of what they want from life."
+            },
+            {
+                "head": "Grow more independent",
+                "body": "The camp is a perfect place for children to learn to be self-driven and independent without the supervision of parents or teachers. Mastering self-management skills in the safe environment of the camp enables the children to discover new spheres of interest."
+            },
+            {
+                "head": "Learn social skills",
+                "body": "Nowadays, virtual communication has almost replaced live contact. Thus, many children become experts in social media communication while losing face-to-face communication skills. At the camp teenagers join a friendly community, where each person has to listen to others and respect them. Staying together children learn to work in a team, resolve misunderstandings and feel the importance and value of live communication. Children from different countries come to the camp, so they learn to overcome cross-cultural barriers and bridge the differences in the world vision."
+            },
+            {
+                "head": "Amazing prizes",
+                "body": "Participants able to spend their point on exchanging with a local souvenir to a Ferrari ride in Singapore or enjoy a flying experience of 4-seaters Cessna private plane around Petronas Twin Tower. There are many more prizes giving out during the camp, all information will be shown upon arrival."
+            },
+            {
+                "head": "Make true friends",
+                "body": "Camp is the place where kids make their very best friends. Free from the social expectations pressuring them at school, camp encourages kids to relax and make friends easily. All the fun at camp draws everyone together."
+            }
+        ],
+        "priceIncludes": []
+    },
+    "smartCamp": {
+        "modals": {
+            "inquire": {
+                "items": [
+                    {
+                        "body": "Accommodation in the residence"
+                    },
+                    {
+                        "body": "Transfer"
+                    },
+                    {
+                        "body": "Breakfasts"
+                    },
+                    {
+                        "body": "English Language Courses"
+                    },
+                    {
+                        "body": "Speed reading courses"
+                    },
+                    {
+                        "body": "Mental Arithmetic courses"
+                    },
+                    {
+                        "body": "Touch typing courses"
+                    },
+                    {
+                        "body": "Everyday games"
+                    },
+                    {
+                        "body": "Kuala Lumpur City Tour"
+                    },
+                    {
+                        "body": "Trip to the “Petrosains”"
+                    },
+                    {
+                        "body": "Batu Caves Tour"
+                    },
+                    {
+                        "body": "Tour to Putrajaya"
+                    },
+                    {
+                        "body": "Fireflies River and Monkey Hill tour"
+                    },
+                    {
+                        "body": "Free SIM-Card"
+                    },
+                    {
+                        "body": "Souvenirs"
+                    },
+                    {
+                        "body": "Prizes and gifts"
+                    },
+                    {
+                        "body": "Coordinators and group leaders"
+                    },
+                    {
+                        "body": "Closing party"
+                    },
+                    {
+                        "body": "Additional elective classes"
+                    }
+                ]
+            }
+        },
+        "b1": {
+            "camp": "International language camp",
+            "dates": "14th July  - 2nd August 2019",
+            "capture": "Invest in your child’s future right now to make your child happy and successful!"
+        },
+        "b11": {
+            "header": "Видео отзывы",
+            "items": [
+                {
+                    "src": "https://www.youtube.com/embed/hQza-JqIU6w"
+                },
+                {
+                    "src": "https://www.youtube.com/embed/Rk6CGs-HgCM"
+                }
+            ]
+        },
+        "title": "Smart Camp 2019",
+        "description": "English Smart Camp",
+        "comments": [
+            {
+                "name": "Venera (Khabarovsk, Russia)",
+                "text": "Daughter saied that Smart Camp is the best camp in her life! Before that, she was in camps in England and Malta",
+                "class": "fnt-smaller-md",
+                "avatar": "/img/female_avatar.jpeg"
+            },
+            {
+                "name": "Lubov (Moscow, Russia)",
+                "text": "Great camp if you want your children to be leaders",
+                "class": "",
+                "avatar": "/img/female_avatar.jpeg"
+            },
+            {
+                "name": "Nina (Almaty, Kazakhstan)",
+                "text": "My daughter had amazing holiday, and additionally acquired useful skills during classes.",
+                "class": "",
+                "avatar": "/img/female_avatar.jpeg"
+            },
+            {
+                "name": "Kim Enjung (Jeju, Korea)",
+                "text": "My child was delighted with the camp! For sure will join camp again.",
+                "class": "",
+                "avatar": "/img/female_avatar.jpeg"
+            },
+            {
+                "name": "Natalia (S-Petersburg, Russia)",
+                "text": "From the very arrival my son showed us his new skills of touch typing!",
+                "class": "fnt-smaller-md",
+                "avatar": "/img/female_avatar.jpeg"
+            },
+            {
+                "name": "Madina (Astana, Kazakhstan)",
+                "text": "My son surprised us with the results on mental arithmetic, which the guys studied Smart Camp. It is a pity that in our time there were no such camps.",
+                "class": "fnt-smaller-sm",
+                "avatar": "/img/female_avatar.jpeg"
+            },
+            {
+                "name": "Sardor (Tashkent, Uzbekistan)",
+                "text": "The purpose of the trip was to improve English, but the son additionally mastered speed reading, fast typing and mental arithmetic.",
+                "class": "fnt-smaller-sm",
+                "avatar": "/img/male_avatar.png"
+            }
+        ],
+        "goals_header": "Main goals of the program",
+        "goals": [
+            {
+                "head": "Improve English language skills",
+                "body": "by immersion in the language environment"
+            },
+            {
+                "head": "Develop logic and mental processing skills",
+                "body": "both through working in a team and on one’s own"
+            },
+            {
+                "head": "Double the speed",
+                "body": "at which you read currently"
+            },
+            {
+                "head": "Learn touch typing",
+                "body": "in English keyboard"
+            },
+            {
+                "head": "Time management",
+                "body": "learn to manage your time efficiently"
+            },
+            {
+                "head": "Independence",
+                "body": "each child has a chance to become more self-driven and develop new skills"
+            },
+            {
+                "head": "Physical health",
+                "body": "sporting activities will help to take a break from mental exercises and get fit"
+            },
+            {
+                "head": "Improve leadership skills",
+                "body": "through daily team-building activities"
+            },
+            {
+                "head": "Improve memory",
+                "body": "Learn to memorize large volumes of any information"
+            },
+            {
+                "head": "Meet",
+                "body": "new and interesting people"
+            },
+            {
+                "head": "Develop",
+                "body": "a variety of life skills"
+            },
+            {
+                "head": "Increase productivity",
+                "body": "and learn to accomplish tasks more efficiently"
+            },
+            {
+                "head": "Explore Malaysia's beauty",
+                "body": "and its nature and thriving metropolitan cities"
+            },
+            {
+                "head": "Get the Super Kid 2019 certificate",
+                "body": ""
+            },
+            {
+                "head": "And a lot more ...",
+                "body": ""
+            }
+        ],
+        "b5_2": {
+            "header": "After Smart camp participants will have the following skills",
+            "items": [
+                {
+                    "img": "/img/sc_ach_1.jpg",
+                    "head": "Touch typing",
+                    "body": "Learn touch typing with 10 fingers! Increase your typing speed 2 to 5 times."
+                },
+                {
+                    "img": "/img/sc_ach_2.jpg",
+                    "head": "Mental arithmetic",
+                    "body": "A unique methodology for developing the intellect. Our training improves both perception and the processing of information while developing both brain hemispheres simultaneously."
+                },
+                {
+                    "img": "/img/sc_ach_3.jpg",
+                    "head": "Speed reading",
+                    "body": "Children will start reading 2-3 times faster than before and understand texts easier! Learn self-paced reading."
+                },
+                {
+                    "img": "/img/sc_ach_4.jpg",
+                    "head": "English Language",
+                    "body": "Improve their English in an immersive language environment. Our new teaching method for FUN ENGLISH."
+                }
+            ]
+        },
+        "b7": {
+            "header": "Where is Smart Camp located?"
+        },
+        "b9": {
+            "header": "Check out our video of Smart Camp 2018"
+        },
+        "b10_2": {
+            "header": "reasons to join Smart Camp"
+        },
+        "b13": {
+            "header": "Mikhail Mitryakov",
+            "header2": "Co-founder of Embassy.Camps",
+            "desc": "Hundreds of children have mastered touch typing, speed-reading and the basics of mental arithmetic in our summer camps in 2015-2018. Don’t let your child miss the chance to develop these skills, too. It will save the child plenty of time in the fast-paced modern lifestyle."
+        },
+        "eduProgram": [
+            {
+                "body": "English classes"
+            },
+            {
+                "body": "Touch typing courses"
+            },
+            {
+                "body": "Speed reading courses"
+            },
+            {
+                "body": "Mental Arithmetic courses"
+            },
+            {
+                "body": "Highly qualified teachers from Britain, the US, Canada, and Australia..."
+            },
+            {
+                "body": "Daily quests and team-building activities to develop logic and leadership skills"
+            },
+            {
+                "body": "Swimming classes 2 times per week"
+            },
+            {
+                "body": "Football trainings 1 time per week"
+            },
+            {
+                "body": "Dancing classes 3 times per week"
+            }
+        ],
+        "entProgram": [
+            {
+                "body": "Daily quests and team-building activities"
+            },
+            {
+                "body": "Kuala Lumpur city tour"
+            },
+            {
+                "body": "Visit to the chocolate factory"
+            },
+            {
+                "body": "The art of Batik, workshop tour"
+            },
+            {
+                "body": "Visit to Petrosains Discovery Centre"
+            },
+            {
+                "body": "Tour to Batu Caves"
+            },
+            {
+                "body": "Tour to Putrajaya"
+            },
+            {
+                "body": "Fireflies river tour"
+            },
+            {
+                "body": "Tour to monkey hill"
+            }
+        ],
+        "priceIncludes": [
+            {
+                "head": "Accommodation in the residence",
+                "body": "of the international British School King Henry VII"
+            },
+            {
+                "head": "Breakfasts",
+                "body": "(full board for USD 150)"
+            },
+            {
+                "head": "Transfers",
+                "body": "airport - hotel - airport"
+            },
+            {
+                "head": "English Language Courses",
+                "body": "Monday to Friday - 10 hours a week"
+            },
+            {
+                "head": "Speed reading courses",
+                "body": " "
+            },
+            {
+                "head": "Mental Arithmetic courses",
+                "body": " "
+            },
+            {
+                "head": "Touch typing courses",
+                "body": " "
+            },
+            {
+                "head": "Everyday games",
+                "body": "mega quests, team-bulding"
+            },
+            {
+                "head": "Kuala Lumpur City Tour",
+                "body": " "
+            },
+            {
+                "head": "Trip to the “Petrosains” museum",
+                "body": "entrance fees are included"
+            },
+            {
+                "head": "Batu Caves Tour",
+                "body": " "
+            },
+            {
+                "head": "Tour to the city of Putrajaya",
+                "body": " "
+            },
+            {
+                "head": "Fireflies River and Monkey Hill tour",
+                "body": "entrance fees are included"
+            },
+            {
+                "head": "Free SIM-Card",
+                "body": " "
+            },
+            {
+                "head": "Souvenirs from the company",
+                "body": " "
+            },
+            {
+                "head": "Prizes and gifts",
+                "body": "for participation in competitions"
+            },
+            {
+                "head": "Coordinators and group leaders",
+                "body": "for the full duration of program"
+            },
+            {
+                "head": "Closing party",
+                "body": " "
+            },
+            {
+                "head": "Additional elective classes",
+                "body": "swimming, yoga, football"
+            }
+        ]
+    },
+    "payment": {
+        "wait_verification": "Please wait. Your payment is being veriviyng",
+        "successful": "Success!",
+        "successful_desc": "Redirecting...",
+        "failed": "Error",
+        "failed_desc": "Failed. Please try again later or contact our support team"
+    },
+    "referral": {
+        "list_of_visitors": "List of your referrals",
+        "show_orders": "Show orders",
+        "show_stats": "Показать статистику",
+        "list_of_orders": "Список заказов по Вашей ссылке"
+    },
+    "clientarea": {
+        "title": "Client area",
+        "upcoming_camps": "Upcoming camps",
+        "overview": "Overview",
+        "my_bookings": "My orders",
+        "settings": "Settings",
+        "past_camps": "Past camps",
+        "password": "Password",
+        "old_password": "Old password",
+        "new_password": "New password",
+        "new_password_repeat": "New password again",
+        "registration": "Registration",
+        "photo": "Picture",
+        "passport": "Passport",
+        "order_paid": "Paid",
+        "order_status": "Pay for the orders",
+        "agreement": "Parent's agreement",
+        "rules": "Rules",
+        "medical": "Madical form",
+        "parent_passport": "Passport of the parent/guardian",
+        "upload_avatar": "Picture of the participant",
+        "upload_image_tip": "Upload the picture. Allowed formats: jpg, png, gif",
+        "upload_image_pdf_tip": "Upload the document. Allowed formats: pdf, jpg, png, gif",
+        "d_medical_form": "Upload the medical form (pdf, jpg, png)",
+        "dp_medical_form": "please download and fill up the medical form. Once done pleas scan it and upload in pdf|jpg|png|gif format.",
+        "d_photos": "",
+        "dp_photos": "",
+        "referrals": "Referrals",
+        "d_parent_passport": "Upload passport of the parent/guardian (pdf, jpg, png)",
+        "dp_parent_passport": "Passport/ID photocopy of the parent/guardin. Required for signature validation.",
+        "d_photo": "Picture of participant",
+        "dp_photo": "Preferably white background",
+        "order_make_payment": "Make payment",
+        "documents": "Documents",
+        "accomodation_type": "Accomodation",
+        "addition_options": "Included",
+        "addition_options_add": "Currently you have no selected addons. Go to \"Addons\" section and select what would you like to add on top. You will be billed separately",
+        "available_options": "Additional options",
+        "d_rules": "Camp rules signed by the parent/guardian",
+        "dp_rules": "Please download and read the camp rules, print it out and sign, then scan and upload in pdf, jpg, png, gif format.",
+        "pay_4the_order_desc": "Выберите из списка инвойсы, которые вы хотите оплатить и нажмите кнопку оплаты. Вы будете перенаправлены на сайт PayPal, где вы сможете совершить необходимые транзакции",
+        "pay_4the_order": "Unpaid invoices",
+        "no_invoices": "No unpaid invoices",
+        "view_order": "Show order",
+        "delete_order": "Remove order",
+        "create_invoice": "Create invoice",
+        "uploaded_documents": "Uploaded documents",
+        "applicant_data": "Applicant's data",
+        "participant_info": "Participant info",
+        "parent_info": "Parent/Guardian",
+        "edit_participant_data": "Edit participant's info",
+        "download_document": "Download document",
+        "delete_document": "Delete the document",
+        "sure_to_delete": "Delete?",
+        "db": {
+            "first_name": "First name",
+            "last_name": "Last name",
+            "address": "Address",
+            "birth_date": "Birth date",
+            "email": "E-mail",
+            "phone": "Phone",
+            "passport_number": "Passport no",
+            "passport_expire": "Passport expires",
+            "city": "City",
+            "country": "Country",
+            "passport": "Passport",
+            "parent_approval": "Parents approval",
+            "rules": "Rules",
+            "photo": "Partisipant's picture",
+            "parent_passport": "Parent's passport",
+            "medical_form": "Medical form",
+            "passport_desc": "Please upload the passport page that contains your photo and personal details in .jpeg, .jpg, .png or .pdf. Please note six months passport validity beyond your stay is required.",
+            "parent_approval_desc": "Please click <a href=\"%{url}\" target=\"_blank\">the link</a> to download parents’ approval form, print it out, fill up, sign and upload the scan in .jpeg, .jpg, .png or .pdf.",
+            "rules_desc": "Please click <a href=\"%{url}\" target=\"_blank\">the link</a> to download rules, print it out, sign and upload the scan in .jpeg, .jpg, .png or .pdf.",
+            "photo_desc": "Please upload participant's photo in .jpeg, .jpg, .png or .pdf.",
+            "medical_form_desc": "Please click <a href=\"%{url}\" target=\"_blank\">the link</a> to download medicall form, print it out, fill up, sign and upload the scan in .jpeg, .jpg, .png or .pdf.",
+            "parent_passport_desc": "Please upload the passport page of one of the parents in .jpeg, .jpg, .png or .pdf. Page should contatin photo and personal details. File size shouldn't exceeded 8 MB."
+        },
+        "currently_no_orders": "You dont have any orders.",
+        "edit_parent_data": "Edit parent's info",
+        "add_these_options_to_the_order": "Adding new options and invoice creation",
+        "add_options": "Options adding",
+        "edit_participant_data_desc": "Edit participant's info",
+        "edit_parent_data_desc": "Edit parent's info",
+        "do_payment": "do_payment",
+        "pay_this_invoice": "Pay invoice",
+        "d_passport": "Passport photocopy",
+        "dp_passport": "Upload copy of the passport.",
+        "d_parent_approval": "Signed parent's agreement",
+        "dp_parent_approval": "---",
+        "messages": {
+            "your_data_has_been_updated": "Updated",
+            "password_doesnt_match": "Wrong old password",
+            "invoice_created": "Selected options have been added to the existing order. New invoice will be generated in a while",
+            "updated": "Updated",
+            "invoice_not_found": "The invoice is not yet ready. Please try again later.",
+            "form_general_error": "Fatal error",
+            "passport_error": "Error: Please check your passport expiration date. It should be valid ",
+            "order_created": "",
+            "file_cannot_be_deleted": "Couldn't delete the file"
+        },
+        "my_past_bookings": "Past camps",
+        "register_again_button": "Enroll to the camp",
+        "currently_no_orders_short": "У вас нет заказов"
+    },
+    "commonButtons": {
+        "select_options": "Select options",
+        "select": " Select",
+        "browse": "Browse",
+        "read_more": "Read more"
+    },
+    "nav": {
+        "our_camps": "Our camps",
+        "about_us": "About us",
+        "contacts": "Contacts",
+        "home": "Home",
+        "blog": "Blog",
+        "clientarea": "Client Area",
+        "personal_data_greement": "Personal Data agreement"
+    },
+    "organization": "Embassy Alliance Travel",
+    "index": {
+        "title": "Summer camps Embassy Camp in Malaysia and Singapore",
+        "description": "Language and summer camps in Malaysia and Singapore Embassy Camps are aimed at holistic development of children and teenagers. Combining holidays abroad with teaching in English, we present all the key components brought to the participants via interactive and fun environment filled with games, activities and team buildings.",
+        "keywords": "Summer camps",
+        "b1": {
+            "camp": "In Malaysia and Singapore",
+            "head": "Summer Camps"
+        },
+        "b5": {
+            "header": "Summer camps<br />Embassy Camp",
+            "desc": "Learning principles of our camps are based on holistic improvement of an individual's mental, physical and social skills. Regardless of the camp program all the components are brought to participants via interactive and fun environment filled with games and activities."
+        },
+        "b5_2": {
+            "header": "Summer boarding camps"
+        },
+        "b6": {
+            "header": "Skills learned and improved in our summer camps",
+            "body": "Our Summer Camps are holistic programs focused on the improvement of kid's mental, physical, social and leadership skills which are so important in the modern world",
+            "icons": [
+                {
+                    "icon": "/img/icons/English.png",
+                    "text": "English Language Proficiency"
+                },
+                {
+                    "icon": "/img/icons/Communicative.png",
+                    "text": "Communicative and Social Skills"
+                },
+                {
+                    "icon": "/img/icons/Touch.png",
+                    "text": "Touch Typing"
+                },
+                {
+                    "icon": "/img/icons/Speed.png",
+                    "text": "Speed Reading"
+                },
+                {
+                    "icon": "/img/icons/MentalArithmetic.png",
+                    "text": "Mental Arithmetic"
+                },
+                {
+                    "icon": "/img/icons/Mind.png",
+                    "text": "Some text here"
+                },
+                {
+                    "icon": "/img/icons/Strategic.png",
+                    "text": "Some text here"
+                }
+            ]
+        },
+        "b7": {
+            "header": "Custom Summer Camps for your group",
+            "body": "Haven’t found desired dates? Good news: it’s summer all year round in Malaysia and Singapore. Get in touch for a tailor made Summer Camp for your group and our professional educators will be happy to help you to create a camp for any dates needed."
+        },
+        "b8": {
+            "s1": {
+                "header": "Excursions during the camp",
+                "body": "Malaysia and Singapore have lots of sites for curious minds. We fill our summer camps and boarding camps with guided excursions to visit the most famous landmarks around."
+            },
+            "s2": {
+                "header": "Evening activities at the camp",
+                "body": "Learning through experience is the key component of our camps. We arrange daily evening activities that develop confidence, public speaking skills, teamwork, decision making and other qualities in the participants of our summer camps."
+            }
+        },
+        "comments": {
+            "mainHeader": "What do parents say about our summer camps?"
+        },
+        "past_camps": {
+            "header": "Наши лагеря прошлых лет"
+        }
+    },
+    "blog": {
+        "b1": {
+            "header": "Blog"
+        }
+    },
+    "commonCamps": {
+        "right": {
+            "header": "Choose camp package",
+            "accomodation_header": "Suitable accomodation",
+            "options_header": "Desired options",
+            "button": "Purchase",
+            "header_inactive": "Лагерь завершен"
+        },
+        "links": [
+            {
+                "name": "Description",
+                "link": "#description"
+            },
+            {
+                "name": "Goals",
+                "link": "#goals"
+            }
+        ]
+    },
+    "contacts": {
+        "b1": {
+            "header": "Contacts",
+            "body": "The website <a href=\"https://embassy.camp\">embassy.camp</a> is a part of Asian Guides® websites’ group which provides travel and ground services in Southeast Asia. Trademark Asian Guides® belongs to international travel company Embassy Alliance Travel with offices located in Malaysia and Singapore."
+        },
+        "license": "License",
+        "phone": "Tel",
+        "fax": "Fax",
+        "email": "E-mail",
+        "salesDepartment": "Sales",
+        "manager": "manager",
+        "location1": {
+            "button": "Office in Malaysia",
+            "name": "Embassy Alliance Travel",
+            "license_number": "KPK/LN:4708",
+            "address": "C-12-1, Wisma Goshen, Plaza Pantai, No. 5, Jalan 4/83A, off Jalan Pantai Bharu, 59200, Kuala Lumpur, Malaysia",
+            "phone": "+60 322874722",
+            "fax": "+60 322874722",
+            "sale_phone": "+60 107880878",
+            "sale_email": "education@embassyalliance.com"
+        },
+        "location2": {
+            "button": "Office in Singapore",
+            "name": "Embassy Alliance Travel",
+            "license_number": "STB/LN:02106",
+            "address": "Suite 50, Level 30, Singapore Land Tower, 50 Raffes Place, Singapore 048623",
+            "phone": "+65 6428 3538",
+            "fax": "+65 6632 3600",
+            "sale_phone": "+60 107880878",
+            "sale_email": "education@embassyalliance.com"
+        }
+    },
+    "register": "Registration",
+    "login": "Log In",
+    "logging_out": "Logging out...",
+    "user_login": "User login",
+    "backend": {
+        "already_exists": "Email is already exists",
+        "not_valid_email": "Not valid e-mail"
+    },
+    "registration": "Registration",
+    "dates": "Dates",
+    "messages": {
+        "errors": {
+            "connection_error": "A connection error has occured! Please try again later.",
+            "order_already_exists": "Error! An order with this name is already exists."
+        }
+    },
+    "dates_complete": "Dates of completion",
+    "participants_sum": "No of participants",
+    "cookie_warning": "This site uses cookies. By continuing to browse the site you are agreeing to our use of cookies.",
+    "agree": "Agree",
+    "article": {
+        "was_this_helpful": "Was this article useful to you?",
+        "yes": "Yes",
+        "no": "NO",
+        "thank_you": "Thank you!",
+        "what_else": "What else you would like to read about on our website?",
+        "we_sorry": "We're sorry to hear that...",
+        "what_went_wrong": "Please choose what exactly you didn't like?",
+        "went_wrong_options": [
+            {
+                "score": 75,
+                "text": "option 1"
+            },
+            {
+                "score": 50,
+                "text": "option 2"
+            },
+            {
+                "score": 25,
+                "text": "option 3"
+            },
+            {
+                "score": 1,
+                "text": "option 4"
+            }
+        ],
+        "thank_you_no_more": {
+            "head": "Thanks for your opinion",
+            "body": "Your message has been sent to our content-manager. We'll look forward to improve our web-site"
+        }
+    },
+    "invoice": {
+        "invoiceid": "Invoice ID #"
+    },
+    "pastCamps": {
+        "our_videos_title": "Видеоролики лагеря",
+        "we_currently_collecting_videos": "Видеоролики находятся в обработке и скоро появятся на сайте",
+        "our_reviews": "Отзывы о лагере"
+    }
+}

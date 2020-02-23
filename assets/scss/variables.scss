@@ -1,0 +1,14 @@
+$font-main-color: #333333;
+$font-main-color-light: #999;
+$active-element-color: #ff5722;
+$uk-color-danger: #f0506e;
+$green: #009688;//#4CAF50;
+$red: #f0506e;
+$btn-color: #ff5722;
+$stepper-active: $btn-color;//#34bc9b;
+$stepper-inactive: #f1f1f1; 
+
+@keyframes opacity-in {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
