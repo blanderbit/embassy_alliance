@@ -266,7 +266,8 @@
                   :navText="['', '']"
                 >
                   <div v-for="(item, index) in carousels.carousel1" :key="index">
-                    <div class="facility-c" v-lazy:background-image="item"></div>
+<!--                    <div class="facility-c" v-lazy:background-image="item"></div>-->
+                    <div class="facility-c" :style="{backgroundImage: 'url(' +item + ')'}"></div>
                   </div>
                 </owl-carousel>
               </client-only>
@@ -293,7 +294,8 @@
                   :navText="['', '']"
                 >
                   <div v-for="(item, index) in carousels.carousel2" :key="index">
-                    <div class="facility-c" v-lazy:background-image="item"></div>
+<!--                    <div class="facility-c" v-lazy:background-image="item"></div>-->
+                    <div class="facility-c" :style="{backgroundImage: 'url(' +item + ')'}"></div>
                   </div>
                 </owl-carousel>
               </client-only>
