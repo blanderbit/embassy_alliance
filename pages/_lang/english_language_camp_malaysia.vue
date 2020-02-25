@@ -1,8 +1,8 @@
 <template>
   <div>
-    <section class="b01">
+    <section class="b01" :style="{backgroundImage: 'url(./img/b01_bg.jpg)'}">
   <Nav/>
-  <div class="b01_in2">
+  <div class="b01_in2" >
     <div class="container">
       <div class="flex flex-end">
         <div class="col5 top-capture">
@@ -13,13 +13,13 @@
           <p class="b01_in2_tx5">{{$t('landing.b1.age')}}: {{product.age_from}} - {{product.age_to}} {{$t('landing.b1.years')}}</p>
           <div class="b01_in2_sb1">
             <div class="flex1 flex-justify">
-              <a href="javascript:void(0)" 
-                  class="btn1" 
+              <a href="javascript:void(0)"
+                  class="btn1"
                   @click="showPrice=false;openOrderForm($event)">
                   {{$t('landingCommon.buttons.make_order')}}
               </a>
-              <a href="javascript:void(0)" 
-                  class="btn2" 
+              <a href="javascript:void(0)"
+                  class="btn2"
                   @click="showPrice=true;openOrderForm($event)">
                   {{$t('landingCommon.buttons.inquire')}}
               </a>
@@ -102,8 +102,8 @@
           <p class="b03_in5_tx2">{{$t('landingCommon.promo.desc1')}} {{promoDate}} {{$t('landingCommon.promo.desc2')}}
           </p>
           <div class="b03_in5_tx3">
-            <a href="javascript:void(0)" 
-                class="btn1" 
+            <a href="javascript:void(0)"
+                class="btn1"
                 @click="showPrice=false;openOrderForm($event)">
                 {{$t('landingCommon.buttons.get_prize')}}
             </a>
@@ -139,7 +139,7 @@
       <div class="col6">
         <p class="b01_in2_tx1">{{$t('landing.b5.header')}}</p>
         <p class="b05_in1_tx1">
-          {{$t('landing.b5.desc')}}         
+          {{$t('landing.b5.desc')}}
         </p>
         <div class="b05_in1_img">
           <img src="/img/girls_bg.jpg" alt="">
@@ -152,7 +152,7 @@
         </div>
       </div>
     </div>
-    
+
   </div>
 </section>
 
@@ -321,7 +321,7 @@
           <p class="b05_in2_tx1">{{b.head}}</p>
           <p class="b05_in2_tx2">{{b.body}}</p>
         </div>
-      </div>   
+      </div>
     </div>
   </div>
 </section>
@@ -381,8 +381,8 @@
   <div class="b12_in" style="background: rgba(255,255,255,.85);">
     <p class="b01_in2_tx1">{{$t('landing.b12.header')}}</p>
     <div class="b12_in_sb1">
-      <a href="javascript:void(0)" 
-          class="btn2" 
+      <a href="javascript:void(0)"
+          class="btn2"
           @click="toggleReviews()">
           {{$t('landing.b12.button')}}</a>
     </div>
@@ -399,13 +399,13 @@
 
 <section class="b14" v-show="showBottomButtons">
   <div class="flex1 flex-justify">
-    <a href="javascript:void(0)" 
-        class="btn1" 
+    <a href="javascript:void(0)"
+        class="btn1"
         @click="showPrice=false;openOrderForm($event)">
         {{$t('landingCommon.buttons.make_order')}}
     </a>
-    <a href="javascript:void(0)" 
-        class="btn2" 
+    <a href="javascript:void(0)"
+        class="btn2"
         @click="showPrice=true;openOrderForm($event)">
         {{$t('landingCommon.buttons.inquire')}}
     </a>
@@ -431,7 +431,7 @@
               <div class="reviews__holder_img-container">
                 <img class="review" :src="item.src" >
               </div>
-              
+
             </div>
         </div>
     </owl-carousel>
@@ -440,12 +440,12 @@
 
 <!-- ORDER --->
 <vk-modal-full center :show="modal.makeOrder">
-  
+
   <vk-grid collapse class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle order-modal-body" >
     <div>
         <div class="uk-width-auto@m"></div>
     </div>
-    <div class="uk-width-1-2@m uk-padding-large" 
+    <div class="uk-width-1-2@m uk-padding-large"
       style="background: #fff;
              box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px 0px !important;
              align-self: start;
@@ -459,11 +459,11 @@
   <div v-if="!simpleForm && !showPrice">
       <OrderStepper :stepper="stepper"/>
       <!--<h1>Headline</h1>-->
-      <OrderForm 
-        :countries="countries" 
+      <OrderForm
+        :countries="countries"
         :order="order"
         :product="product"
-        :addons="addons"      
+        :addons="addons"
         />
   </div>
   <div v-if="simpleForm && showPrice">
@@ -475,10 +475,10 @@
               <span class="l-desc">{{variation.i18n_name[locale]}}</span>
             </div>
       <h3>{{$t('landingCommon.modals.inquire.header2')}}:</h3>
-      <div class="flex flex-wrap ">       
+      <div class="flex flex-wrap ">
           <ul class="b08_ul modal-included-list">
             <li v-for="(b, index) in $t('landing.modals.inquire.items')" :key="index">{{b.body}}</li>
-          </ul>        
+          </ul>
       </div>
 
       <div class="flex1 flex-center mt-md">
@@ -498,7 +498,7 @@
             {{contact.response}}
           </div>
           <div class="centered-button mt-md mb-md">
-            <button 
+            <button
                 class="uk-button uk-button-default uk-button-large"
                 @click="closeOrderForm()"
                 >
@@ -513,46 +513,46 @@
         <legend class="uk-legend">{{$t('form.fill_up_the_form')}}</legend>
 
         <div class="uk-margin">
-            <input 
-                class="uk-input" 
-                type="text" 
+            <input
+                class="uk-input"
+                type="text"
                 name="ct_first_name"
-                :data-vv-as="$t('form.first_name')" 
+                :data-vv-as="$t('form.first_name')"
                 v-model="contact.firstName"
-                v-validate="'required|alpha'" 
+                v-validate="'required|alpha'"
                 :placeholder="$t('form.first_name')">
                 <span v-if="errors.has('ct_first_name')" class="input-invalid">
                   {{ errors.first('ct_first_name') }}</span>
         </div>
         <div class="uk-margin">
-            <input 
-                class="uk-input" 
+            <input
+                class="uk-input"
                 name="ct_last_name"
-                :data-vv-as="$t('form.last_name')" 
+                :data-vv-as="$t('form.last_name')"
                 v-model="contact.lastName"
                 v-validate="'required'"
-                type="text" 
+                type="text"
                 :placeholder="$t('form.last_name')">
                 <span v-if="errors.has('ct_last_name')" class="input-invalid">
                   {{ errors.first('ct_last_name') }}</span>
         </div>
         <div class="uk-margin">
-            <input class="uk-input" 
-                v-validate="'required|email'" 
+            <input class="uk-input"
+                v-validate="'required|email'"
                 name="ct_email"
-                type="email" 
-                :data-vv-as="$t('form.email')" 
+                type="email"
+                :data-vv-as="$t('form.email')"
                 v-model="contact.email"
                 :placeholder="$t('form.email')">
                 <span v-if="errors.has('ct_email')" class="input-invalid">
                   {{ errors.first('ct_email') }}</span>
         </div>
         <div class="uk-margin">
-            <input class="uk-input" 
-                type="phone" 
+            <input class="uk-input"
+                type="phone"
                 name="ct_phone"
-                :data-vv-as="$t('form.phone')" 
-                v-validate="'required'" 
+                :data-vv-as="$t('form.phone')"
+                v-validate="'required'"
                 v-model="contact.phone"
                 :placeholder="$t('form.phone_placeholder')">
                 <span v-if="errors.has('ct_phone')" class="input-invalid">
@@ -562,10 +562,10 @@
          <span class="age-label">{{$t('form.age')}}</span>
           <div class="uk-margin">
             <input class="uk-range"
-              v-model="contact.age" 
+              v-model="contact.age"
               name="ct_age"
-              type="range" 
-              v-validate="'required'" 
+              type="range"
+              v-validate="'required'"
               value="2" min="9" max="20" step="1">
           </div>
           <span class="age-display">{{contact.age}} {{$t('form.years')}}</span>
@@ -573,18 +573,18 @@
 
         <div class="uk-margin">
             <textarea v-model="contact.message" class="uk-textarea" rows="5" :placeholder="$t('form.message')"></textarea>
-        </div> 
+        </div>
         <div id="recaptcha" class="g-recaptcha"></div>
         <!--<script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>-->
     </fieldset>
           <div class="spreaded-buttons-2 mt-md mb-md">
-            <button 
+            <button
                 class="btn2 btn2-form"
                 @click="closeOrderForm()"
                 >
                 {{$t('form.cancel')}}
             </button>
-            <button 
+            <button
                 class="btn1 btn1-form"
                 @click="onContactFormSubmit()"
                 >
@@ -641,50 +641,50 @@ export default {
               tmpImages: [
               ],
               images:[
-                 { src:'/img/rev_ea_1_1.jpg', },
-                 { src:'/img/rev_ea_1_2.jpg', },
-                 { src:'/img/rev_ea_1_3.jpg', },
-                 { src:'/img/rev_ea_1_4.jpg', },
-                 { src:'/img/rev_ea_1_5.jpg', },
-                 { src:'/img/rev_ea_1_6.jpg', },
-                 { src:'/img/rev_ea_1_7.jpg', },
-                 { src:'/img/rev_ea_1_8.jpg', },
-                 { src:'/img/rev_ea_1_9.jpg', },
-                 { src:'/img/rev_ea_1_10.jpg', },
-                 { src:'/img/rev_ea_1_11.jpg', },
-                 { src:'/img/rev_ea_1.jpg', },
-                 { src:'/img/rev_ea_2.jpg', },
-                 { src:'/img/rev_ea_3.jpg', },
-                 { src:'/img/rev_ea_4.jpg', },
-                 { src:'/img/rev_ea_5.jpg', },
-                 { src:'/img/rev_ea_6.jpg', },
-                 { src:'/img/rev_ea_7.jpg', },
-                 { src:'/img/rev_ea_8.jpg', },
-                 { src:'/img/rev_ea_9.jpg', },
-                 { src:'/img/rev_ea_10.jpg', },
-                 { src:'/img/rev_ea_11.jpg', },
-                 { src:'/img/rev_ea_12.jpg', },
-                 { src:'/img/rev_ea_13.jpg', },
-                 { src:'/img/rev_ea_14.jpg', },
-                 { src:'/img/rev_ea_15.jpg', },
-                 { src:'/img/rev_ea_16.jpg', },
-                 { src:'/img/rev_ea_17.jpg', },
-                 { src:'/img/rev_ea_18.jpg', },
-                 { src:'/img/rev_ea_19.jpg', },
-                 { src:'/img/rev_ea_20.jpg', },
-                 { src:'/img/rev_ea_21.jpg', },
-                 { src:'/img/rev_ea_22.jpg', },
-                 { src:'/img/rev_ea_23.jpg', },
-                 { src:'/img/rev_ea_24.jpg', },
-                 { src:'/img/rev_ea_25.jpg', },
-                 { src:'/img/rev_ea_26.jpg', },
-                 { src:'/img/rev_ea_27.jpg', },
-                 { src:'/img/rev_ea_28.jpg', },
-                 { src:'/img/rev_ea_29.jpg', },
-                 { src:'/img/rev_ea_30.jpg', },
-                 { src:'/img/rev_ea_31.jpg', },
-                 { src:'/img/rev_ea_32.jpg', },
-                 { src:'/img/rev_ea_33.jpg', },               
+                 { src:'/img/embassy_english_reviews/rev_ea_1_1.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_2.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_3.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_4.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_5.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_6.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_7.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_8.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_9.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_10.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_11.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_2.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_3.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_4.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_5.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_6.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_7.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_8.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_9.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_10.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_11.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_12.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_13.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_14.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_15.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_16.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_17.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_18.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_19.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_20.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_21.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_22.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_23.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_24.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_25.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_26.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_27.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_28.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_29.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_30.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_31.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_32.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_33.jpg', },
               ],
               index: null
             },
@@ -704,9 +704,9 @@ export default {
             },
             writeSuccessful: false,
             //userData: {},
-            variationTemplate: { 
-                  id: '', 
-                  name: 'Please Select The Camp first', 
+            variationTemplate: {
+                  id: '',
+                  name: 'Please Select The Camp first',
                   price: 0
             },
             modal:{
@@ -775,7 +775,7 @@ export default {
     },
     head() {
       //const i18nSeo = this.$nuxtI18nSeo()
-        return { 
+        return {
             title: this.$t('landing.title'),
             meta: [
                     { name: 'description', content: this.$t('landing.description')},
@@ -784,7 +784,7 @@ export default {
             }
     },
     methods: {
-        toggleReviews(){         
+        toggleReviews(){
           //this.syncImageArrays();
           this.modal.reviews = !this.modal.reviews;
           this.$store.commit('setStickyNav',false);
@@ -804,23 +804,26 @@ export default {
             //console.log('from recapthcha init')
         },
         async getProduct(){
+          // debugger
           var res = this.$route.path.split("/");
           //console.log(res);
-          var slug = res[res.length - 1]; //this.$nuxt.$route.name || 
+          var slug = res[res.length - 1]; //this.$nuxt.$route.name ||
            await this.$axios.get('/products/slug/' + slug)
                 .then((response) => {
-                  //console.log(slug + ":" + response.data.data)
+                  // debugger
+                  //console.l1og(slug + ":" + response.data.data)
                     //this.products.push(...response.data.data);
                     if(response.data.data.variations){
                       this.product = response.data.data;
-                      this.setInitialVariation();                     
+                      this.setInitialVariation();
                     }
                 })
                 .catch((err) => {
-                  
+
                 })
                 .finally(()=>{
-                    this.initCountDown(this.product.starts_at);
+                  // debugger
+                    this.initCountDown(this.product.starts_at || new Date);
                     //console.log("starts at: " + this.product.starts_at)
                 })
         },
@@ -832,10 +835,10 @@ export default {
                     this.addons = response.data;
                 })
                 .catch((err) => {
-                  
+
                 })
         },
-        
+
         setInitialVariation(){
           this.order.variationID = this.product.variations[this.product.variations.length - 1].id;
         },
@@ -849,11 +852,11 @@ export default {
             this.modal.makeOrder = false;
             this.$store.commit('setstickyNavDisabled',false);
         },
-        async onContactFormSubmit() { 
+        async onContactFormSubmit() {
           let el = document.getElementById("contactForm");
           if(!el.classList.contains("form-verification")){
             el.className += "form-verification";
-          }          
+          }
 
           this.$validator.validateAll()
             .then(valid => {
@@ -863,15 +866,15 @@ export default {
               }
             });
 
-          if( !this.contact.firstName || 
+          if( !this.contact.firstName ||
               !this.contact.lastName ||
               !this.contact.email ||
               !this.contact.phone ||
               !this.contact.age ||
-              this.errors.has('ct_first_name') || 
-              this.errors.has('ct_last_name') || 
-              this.errors.has('ct_email') || 
-              this.errors.has('ct_phone') || 
+              this.errors.has('ct_first_name') ||
+              this.errors.has('ct_last_name') ||
+              this.errors.has('ct_email') ||
+              this.errors.has('ct_phone') ||
               this.errors.has('ct_age')){
                 //console.log('ERROR: form is not filled up');
                 return null;
@@ -918,18 +921,18 @@ export default {
               token: thisToken
           })
           .then((response) => {
-              this.modal.loader = false;  
-              this.contact.response = this.$t('form.contact_form_complete');          
+              this.modal.loader = false;
+              this.contact.response = this.$t('form.contact_form_complete');
             })
           .catch((err) => {
-              this.modal.loader = false; 
+              this.modal.loader = false;
               //console.log(err);
               if(err.response){
                 this.formError = err.response.message;
               }
               //console.log(this.formError);
           })
-          
+
         },
         initReCaptcha() {
           var self = this;
@@ -990,20 +993,23 @@ export default {
               this.countDownCalc();
             }.bind(this), 1000);
         },
-        initCountDown(date) {
+        initCountDown(date = '') {
             var ts = Math.round((new Date()).getTime() );
+            console.log(ts)
+          date = new String(date)
             const [year, month, day] = [...date.split('-')]
             const monthIndex = month - 1 // remember that Date's contructor 2nd param is monthIndex (0-11) not month number (1-12)!
             var eventDate = new Date(year, monthIndex, this.promoDayLast) //year, monthIndex, day
             eventDate.setMonth(eventDate.getMonth() - this.promoMonths);
             this.promoDate = eventDate.toLocaleDateString();
             var ts2 = Math.round(eventDate.getTime() );
-            this.cd.count = ts2 - ts;
+            // this.cd.count = ts2 - ts;
+            this.cd.count = 1000000;
             if(this.cd.count>0 && !this.cd.started && !this.$route.query.cd){
               this.countDownStart()
               this.cd.started = true;
             }
-        },       
+        },
     },
     //components: { carousel },
     components: {
@@ -1016,15 +1022,15 @@ export default {
     },
     mounted(){
         //this.$validator.localize('en');
-        this.getReferrence();  
-        this.getCountries(); 
+        this.getReferrence();
+        this.getCountries();
         this.getProduct();
         this.getAddons();
         this.syncImageArrays();
         //this.reviews.tmpImages.push(this.reviews.images[0])
         //this.reviews.tmpImages.push(this.reviews.images[1])
         //this.initReCaptcha();
-        
+
     },
     computed: {
       showBottomButtons(){
@@ -1103,7 +1109,7 @@ $btn-color: #ff5722;
 }
 .order-modal-body{
   background-size: cover;
-  background-image: linear-gradient(rgba(255,255,255,.80), rgba(255,255,255,.80)), url('/img/b01_bg.jpg'); 
+  background-image: linear-gradient(rgba(255,255,255,.80), rgba(255,255,255,.80)), url('/img/b01_bg.jpg');
   min-height: 100vh;
   background-attachment: fixed;
 }
@@ -1184,7 +1190,7 @@ $btn-color: #ff5722;
     height: 35px;
     cursor: pointer;
     margin-top: -17px;
-    
+
   }
 
   .uk-range::-moz-range-thumb {

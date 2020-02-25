@@ -1,6 +1,6 @@
 <template>
 <div class="b01_in1" :class="{'sticky': storeStickyNav}" id="topNav">
-    
+
   <div class="top_menu">
     <client-only>
       <vk-offcanvas-content>
@@ -10,23 +10,23 @@
         <vk-offcanvas overlay :show.sync="showSideMenu">
           <vk-offcanvas-close @click="showSideMenu = false"></vk-offcanvas-close>
           <h3>Embassy Camps</h3>
-    
+
           <ul class="drawer-list">
             <li>
               <nuxt-link :to="localePath('english_language_camp_malaysia')">Embassy English</nuxt-link>
             </li>
-            
+
             <li>
               <nuxt-link :to="localePath('english_smart_camp_malaysia')">Smart Camp</nuxt-link>
             </li>
             <li class="divider">{{$t('settings')}}</li>
             <li class="slider-menu">
-              <a href="javascript:void(0)" 
+              <a href="javascript:void(0)"
                   class="lang-switch"
                   @click="navigation.langbar = !navigation.langbar">
                 <span>
                   <globe-icon/>
-                </span>                
+                </span>
                 <span class="lang-name">{{ localeName }}</span>
                 <svg :class="{'arrow': true, 'opened': navigation.langbar}"
                     xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@
             <li>
               <nuxt-link :to="localePath('english_language_camp_malaysia')">Embassy English</nuxt-link>
             </li>
-           
+
             <li>
               <nuxt-link :to="localePath('english_smart_camp_malaysia')">Smart Camp</nuxt-link>
             </li>
@@ -131,7 +131,7 @@
         </div>
       </div>
     </div>
-  </div>   
+  </div>
 </template>
 
 <script>
@@ -140,8 +140,8 @@ var Window = null, Document = null;
 if (process.client) {
   Window = window;
   Document = document;
-} 
-export default { 
+}
+export default {
   components:{
     globeIcon
   },
@@ -182,15 +182,15 @@ export default {
         if (localScrollPos > this.scrollPos){
           if (Window.pageYOffset > sticky) {
             if(!this.$store.stickyNavDisabled){
-              this.$store.commit('setStickyNav',true);  
-            }                        
+              this.$store.commit('setStickyNav',true);
+            }
           } else {
             this.$store.commit('setStickyNav',false);
-          }         
+          }
         } else {
             if((this.scrollPos - localScrollPos) > 5){
               this.$store.commit('setStickyNav',false);
-            }           
+            }
         }
         this.scrollPos = localScrollPos;
       }
@@ -199,10 +199,10 @@ export default {
         this.$store.commit('setShowBottomButtons',true);
       } else {
         this.$store.commit('setShowBottomButtons',false);
-      }     
+      }
     },
     handleResize(event){
-      if(Window){ 
+      if(Window){
         var w = Window.innerWidth || Document.documentElement.clientWidth || Document.body.clientWidth;
         this.$store.commit('setDeviceWidth', w)
         var h = Window.innerHeight || Document.documentElement.clientHeight || Document.body.clientHeight;
@@ -217,17 +217,17 @@ export default {
     }
     //availableLocales () {
     //  return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
-    //},    
+    //},
   },
   mounted(){
     this.getlocaleName();
     this.getAvailableLocales();
     this.$store.commit('setStickyNav',false);
-    this.$store.commit('stickyNavDisabled',false);
+    this.$store.commit('setstickyNavDisabled',false);
   },
-  created(){  
-    // fucking with ssr: 
-    if(Window){ 
+  created(){
+    // fucking with ssr:
+    if(Window){
       Window.addEventListener('scroll', this.handleScroll);
       Window.addEventListener('resize', this.handleResize);
 
@@ -258,7 +258,7 @@ export default {
   a:not(.nuxt-link-exact-active){
     color: gray!important;
   }
-} 
+}
 .lang-switch{
   display: flex;
   justify-content: flex-start;
@@ -288,7 +288,7 @@ export default {
     width: 20px;
     height: 20px;
   }
-} 
+}
 .slide-enter-active {
    -moz-transition-duration: 0.3s;
    -webkit-transition-duration: 0.3s;

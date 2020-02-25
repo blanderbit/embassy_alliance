@@ -253,7 +253,7 @@
         },
         "b1": {
             "camp": "International language camp",
-            "dates": "7th July  - 4th August 2019",
+            "dates": "10 July  - 7 August 2019",
             "age": "Ages",
             "years": "years old",
             "capture": "Invest in your child’s future right now to make your child happy and successful!"
@@ -382,7 +382,7 @@
             }
         },
         "b9": {
-            "header": "Check out our Embassy English 2018 video"
+            "header": "Check out our Embassy English 2019 video"
         },
         "b10": {
             "header": "Price includes",
@@ -617,7 +617,7 @@
         },
         "b1": {
             "camp": "International language camp",
-            "dates": "14th July  - 2nd August 2019",
+            "dates": "3 July  - 24 July 2019",
             "capture": "Invest in your child’s future right now to make your child happy and successful!"
         },
         "b11": {
@@ -768,8 +768,14 @@
         "b7": {
             "header": "Where is Smart Camp located?"
         },
+        "b8":{
+            "s1": {
+                "header": "Accommodation in a summer language camp",
+                "description": "In the Smart Camp summer camp program, we offer accommodation in the new Komune residence, located in the prestigious area of Kuala Lumpur, 2-bed accommodation in a room with two separate rooms.\nIt features a rooftop outdoor swimming pool, a gym and free Wi-Fi. The apartments come with a kitchenette and a large TV with international channels.\nThe spacious bathroom includes a hairdryer and toiletries."
+            }
+        },
         "b9": {
-            "header": "Check out our video of Smart Camp 2018"
+            "header": "Check out our video of Smart Camp 2019"
         },
         "b10_2": {
             "header": "reasons to join Smart Camp"

@@ -13,13 +13,13 @@
           <p class="b01_in2_tx5">{{$t('landing.b1.age')}}: {{product.age_from}} - {{product.age_to}} {{$t('landing.b1.years')}}</p>
           <div class="b01_in2_sb1">
             <div class="flex1 flex-justify">
-              <a href="javascript:void(0)" 
-                  class="btn1" 
+              <a href="javascript:void(0)"
+                  class="btn1"
                   @click="showPrice=false;openOrderForm($event)">
                   {{$t('landingCommon.buttons.make_order')}}
               </a>
-              <a href="javascript:void(0)" 
-                  class="btn2" 
+              <a href="javascript:void(0)"
+                  class="btn2"
                   @click="showPrice=true;openOrderForm($event)">
                   {{$t('landingCommon.buttons.inquire')}}
               </a>
@@ -102,8 +102,8 @@
           <p class="b03_in5_tx2">{{$t('landingCommon.promo.desc1')}} {{promoDate}} {{$t('landingCommon.promo.desc2')}}
           </p>
           <div class="b03_in5_tx3">
-            <a href="javascript:void(0)" 
-                class="btn1" 
+            <a href="javascript:void(0)"
+                class="btn1"
                 @click="showPrice=false;openOrderForm($event)">
                 {{$t('landingCommon.buttons.get_prize')}}
             </a>
@@ -146,9 +146,9 @@
           <p class="b05_in2_tx1">{{goal.head}}</p>
           <p class="b05_in2_tx2">{{goal.body}}</p>
         </div>
-        
+
       </div>
-    </div>  
+    </div>
   </div>
 </section>
 
@@ -164,7 +164,7 @@
         <img :src="b.img">
         </div>
         <span>{{b.head}}</span>
-        <p>{{b.body}}</p>        
+        <p>{{b.body}}</p>
       </div>
       <!--/loop-->
     </div>
@@ -265,14 +265,16 @@
         </div>
         <div class="col5">
           <p class="b08_tx1">
-            {{$t('landing.b8.s1.header')}}
+            {{$t('smartCamp.b8.s1.header')}}
+<!--            {{$t('landing.b8.s1.header')}}-->
           </p>
           <p class="b08_tx2">
-            {{$t('landingCommon.about_school_accommodation')}}
+            {{$t('smartCamp.b8.s1.description')}}
+<!--            {{$t('landingCommon.about_school_accommodation')}}-->
           </p>
-          <ul class="b08_ul">
-            <li v-for="(b, index) in $t('landing.b8.s1.items')" :key="index">{{b.item}}</li>
-          </ul>
+<!--          <ul class="b08_ul">-->
+<!--            <li v-for="(b, index) in $t('landing.b8.s1.items')" :key="index">{{b.item}}</li>-->
+<!--          </ul>-->
         </div>
       </div>
     </div>
@@ -334,7 +336,7 @@
           <p class="b05_in2_tx1">{{point.head}}</p>
           <p class="b05_in2_tx2">{{point.body.replace('PROMO_DATE',promoDate)}}</p>
         </div>
-      </div>     
+      </div>
     </div>
   </div>
 </section>
@@ -392,8 +394,8 @@
   <div class="b12_in" style="background: rgba(255,255,255,.85);">
     <p class="b01_in2_tx1">{{$t('landing.b12.header')}}</p>
     <div class="b12_in_sb1">
-      <a href="javascript:void(0)" 
-          class="btn2" 
+      <a href="javascript:void(0)"
+          class="btn2"
           @click="toggleReviews()">
           {{$t('landing.b12.button')}}
       </a>
@@ -415,12 +417,12 @@
 
 <section class="b14" v-show="showBottomButtons">
   <div class="flex1 flex-justify">
-    <a href="javascript:void(0)" 
+    <a href="javascript:void(0)"
         class="btn1" @click="showPrice=false;openOrderForm($event)">
         {{$t('landingCommon.buttons.make_order')}}
     </a>
-    <a href="javascript:void(0)" 
-        class="btn2" 
+    <a href="javascript:void(0)"
+        class="btn2"
         @click="showPrice=true;openOrderForm($event)">
         {{$t('landingCommon.buttons.inquire')}}
     </a>
@@ -443,7 +445,7 @@
           <div class="reviews__holder">
             <div class="reviews__holder_img-container">
               <img class="review" :src="item.src" >
-            </div>           
+            </div>
           </div>
       </div>
   </owl-carousel>
@@ -452,12 +454,12 @@
 
 
 <!----- INQUIRE MODAL ---->
-<vk-modal-full center :show="modal.makeOrder">  
+<vk-modal-full center :show="modal.makeOrder">
   <vk-grid collapse class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle order-modal-body" >
     <div>
         <div class="uk-width-auto@m"></div>
     </div>
-    <div class="uk-width-1-2@m uk-padding-large" 
+    <div class="uk-width-1-2@m uk-padding-large"
       style="background: #fff;
              box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px 0px !important;
              align-self: start;
@@ -471,11 +473,11 @@
   <div v-if="!simpleForm && !showPrice">
       <OrderStepper :stepper="stepper"/>
       <!--<h1>Headline</h1>-->
-      <OrderForm 
-        :countries="countries" 
+      <OrderForm
+        :countries="countries"
         :order="order"
         :product="product"
-        :addons="addons"      
+        :addons="addons"
         />
   </div>
   <div v-if="simpleForm && showPrice">
@@ -487,15 +489,15 @@
               <span class="l-desc">{{variation.i18n_name[locale]}}</span>
             </div>
       <h3>{{$t('landingCommon.modals.inquire.header2')}}:</h3>
-      <div class="flex flex-wrap ">       
+      <div class="flex flex-wrap ">
           <ul class="b08_ul modal-included-list">
             <li v-for="(b, index) in $t('smartCamp.modals.inquire.items')" :key="index">{{b.body}}</li>
-          </ul>        
+          </ul>
       </div>
 
       <div class="flex1 flex-center mt-md">
           <a href="javascript:void(0)"
-              class="btn1 btn1-form" 
+              class="btn1 btn1-form"
               @click="showPrice=false">
               {{$t('form.send_request')}}
           </a>
@@ -514,7 +516,7 @@
             {{contact.response}}
           </div>
           <div class="centered-button mt-md mb-md">
-            <button 
+            <button
                 class="uk-button uk-button-default uk-button-large"
                 @click="closeOrderForm()"
                 >
@@ -529,46 +531,46 @@
         <legend class="uk-legend">{{$t('form.fill_up_the_form')}}</legend>
 
         <div class="uk-margin">
-            <input 
-                class="uk-input" 
-                type="text" 
+            <input
+                class="uk-input"
+                type="text"
                 name="ct_first_name"
-                :data-vv-as="$t('form.first_name')" 
+                :data-vv-as="$t('form.first_name')"
                 v-model="contact.firstName"
-                v-validate="'required|alpha'" 
+                v-validate="'required|alpha'"
                 :placeholder="$t('form.first_name')">
                 <span v-if="errors.has('ct_first_name')" class="input-invalid">
                   {{ errors.first('ct_first_name') }}</span>
         </div>
         <div class="uk-margin">
-            <input 
-                class="uk-input" 
+            <input
+                class="uk-input"
                 name="ct_last_name"
-                :data-vv-as="$t('form.last_name')" 
+                :data-vv-as="$t('form.last_name')"
                 v-model="contact.lastName"
                 v-validate="'required'"
-                type="text" 
+                type="text"
                 :placeholder="$t('form.last_name')">
                 <span v-if="errors.has('ct_last_name')" class="input-invalid">
                   {{ errors.first('ct_last_name') }}</span>
         </div>
         <div class="uk-margin">
-            <input class="uk-input" 
-                v-validate="'required|email'" 
+            <input class="uk-input"
+                v-validate="'required|email'"
                 name="ct_email"
-                type="email" 
-                :data-vv-as="$t('form.email')" 
+                type="email"
+                :data-vv-as="$t('form.email')"
                 v-model="contact.email"
                 :placeholder="$t('form.email')">
                 <span v-if="errors.has('ct_email')" class="input-invalid">
                   {{ errors.first('ct_email') }}</span>
         </div>
         <div class="uk-margin">
-            <input class="uk-input" 
-                type="phone" 
+            <input class="uk-input"
+                type="phone"
                 name="ct_phone"
-                :data-vv-as="$t('form.phone')" 
-                v-validate="'required'" 
+                :data-vv-as="$t('form.phone')"
+                v-validate="'required'"
                 v-model="contact.phone"
                 :placeholder="$t('form.phone_placeholder')">
                 <span v-if="errors.has('ct_phone')" class="input-invalid">
@@ -578,10 +580,10 @@
          <span class="age-label">{{$t('form.age')}}</span>
           <div class="uk-margin">
             <input class="uk-range"
-              v-model="contact.age" 
+              v-model="contact.age"
               name="ct_age"
-              type="range" 
-              v-validate="'required'" 
+              type="range"
+              v-validate="'required'"
               value="2" min="9" max="20" step="1">
           </div>
           <span class="age-display">{{contact.age}} {{$t('form.years')}}</span>
@@ -589,18 +591,18 @@
 
         <div class="uk-margin">
             <textarea v-model="contact.message" class="uk-textarea" rows="5" :placeholder="$t('form.message')"></textarea>
-        </div> 
+        </div>
         <div id="recaptcha" class="g-recaptcha"></div>
         <!--<script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>-->
     </fieldset>
           <div class="spreaded-buttons-2 mt-md mb-md">
-            <button 
+            <button
                 class="btn2 btn2-form"
                 @click="closeOrderForm()"
                 >
                 {{$t('form.cancel')}}
             </button>
-            <button 
+            <button
                 class="btn1 btn1-form"
                 @click="onContactFormSubmit()"
                 >
@@ -652,68 +654,68 @@ export default {
             showPrice: false,
             formError: '',
             reviews:{
-              tmpImages: [               
+              tmpImages: [
               ],
               images:[
                 {
-                  src:'/img/rev_sc_3.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_3.jpg',
                 },
                 {
-                  src:'/img/rev_sc_4.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_4.jpg',
                 },
                 {
-                  src:'/img/rev_sc_5.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_5.jpg',
                 },
                 {
-                  src:'/img/rev_sc_6.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_6.jpg',
                 },
                 {
-                  src:'/img/rev_sc_7.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_7.jpg',
                 },
                 {
-                  src:'/img/rev_sc_8.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_8.jpg',
                 },
                 {
-                  src:'/img/rev_sc_1.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_1.jpg',
                 },
                 {
-                  src:'/img/rev_sc_2.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_2.jpg',
                 },
                 {
-                  src:'/img/rev_sc_10.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_10.jpg',
                 },
                 {
-                  src:'/img/rev_sc_11.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_11.jpg',
                 },
                 {
-                  src:'/img/rev_sc_12.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_12.jpg',
                 },
                 {
-                  src:'/img/rev_sc_13.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_13.jpg',
                 },
                 {
-                  src:'/img/rev_sc_14.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_14.jpg',
                 },
                 {
-                  src:'/img/rev_sc_15.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_15.jpg',
                 },
                 {
-                  src:'/img/rev_sc_16.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_16.jpg',
                 },
                 {
-                  src:'/img/rev_sc_17.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_17.jpg',
                 },
                 {
-                  src:'/img/rev_sc_18.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_18.jpg',
                 },
                 {
-                  src:'/img/rev_sc_19.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_19.jpg',
                 },
                 {
-                  src:'/img/rev_sc_20.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_20.jpg',
                 },
                 {
-                  src:'/img/rev_sc_21.jpg',
+                  src:'/img/smart_camp_reviews/rev_sc_21.jpg',
                 },
               ],
               index: null
@@ -733,9 +735,9 @@ export default {
               response: ''
             },
             writeSuccessful: false,
-            variationTemplate: { 
-                  id: '', 
-                  name: 'Please Select The Camp first', 
+            variationTemplate: {
+                  id: '',
+                  name: 'Please Select The Camp first',
                   price: 0
             },
             modal:{
@@ -803,7 +805,7 @@ export default {
         }
     },
     head() {
-        return { 
+        return {
             title: this.$t('smartCamp.title'),
             meta: [
                     { name: 'description', content: this.$t('smartCamp.description')},
@@ -812,7 +814,7 @@ export default {
             }
     },
     methods: {
-        toggleReviews(){         
+        toggleReviews(){
           this.modal.reviews = !this.modal.reviews;
           this.$store.commit('setStickyNav',false);
         },
@@ -824,7 +826,7 @@ export default {
                 this.reviews.tmpImages.push(this.reviews.images[i])
               }
             }
-          }          
+          }
         },
         async getReCaptcha(){
             await this.$recaptcha.init()
@@ -833,21 +835,21 @@ export default {
         async getProduct(){
           var res = this.$route.path.split("/");
           //console.log(res);
-          var slug = res[res.length - 1]; //this.$nuxt.$route.name || 
+          var slug = res[res.length - 1]; //this.$nuxt.$route.name ||
            await this.$axios.get('/products/slug/' + slug)
                 .then((response) => {
                   //console.log(slug + ":" + response.data.data)
                     //this.products.push(...response.data.data);
                     if(response.data.data.variations){
                       this.product = response.data.data;
-                      this.setInitialVariation();                     
+                      this.setInitialVariation();
                     }
                 })
                 .catch((err) => {
-                  
+
                 })
                 .finally(()=>{
-                    this.initCountDown(this.product.starts_at);
+                    this.initCountDown(this.product.starts_at || new Date());
                     //console.log("starts at: " + this.product.starts_at)
                 })
         },
@@ -859,10 +861,10 @@ export default {
                     this.addons = response.data;
                 })
                 .catch((err) => {
-                  
+
                 })
         },
-        
+
         setInitialVariation(){
           this.order.variationID = this.product.variations[this.product.variations.length - 1].id;
           ////console.log(this.order.variationID);
@@ -875,7 +877,7 @@ export default {
         },
         closeOrderForm(){
             this.modal.makeOrder = false;
-            this.$store.commit('stickyNavDisabled',false);
+            this.$store.commit('setstickyNavDisabled',false);
         },
         // getUserInfo(){
         //     const url = 'https://ipinfo.io?token=f63b46f8a5fb0e';
@@ -891,19 +893,19 @@ export default {
         //         }
         //         }
         //     }
-        //         //console.log(this.userData);          
+        //         //console.log(this.userData);
         //     })
         //     .finally(() => {
-        //         this.writeUserToFirestore();          
+        //         this.writeUserToFirestore();
         //     });
         // },
-        
-        async onContactFormSubmit() { 
+
+        async onContactFormSubmit() {
           let el = document.getElementById("contactForm");
           if(!el.classList.contains("form-verification")){
             el.className += "form-verification";
           }
-          
+
           this.$validator.validate()
             .then(valid => {
               ////console.log('Validation: ' + valid);
@@ -912,15 +914,15 @@ export default {
               //}
             });
 
-          if( !this.contact.firstName || 
+          if( !this.contact.firstName ||
               !this.contact.lastName ||
               !this.contact.email ||
               !this.contact.phone ||
               !this.contact.age ||
-              this.errors.has('ct_first_name') || 
-              this.errors.has('ct_last_name') || 
-              this.errors.has('ct_email') || 
-              this.errors.has('ct_phone') || 
+              this.errors.has('ct_first_name') ||
+              this.errors.has('ct_last_name') ||
+              this.errors.has('ct_email') ||
+              this.errors.has('ct_phone') ||
               this.errors.has('ct_age')){
                 return null;
               }
@@ -958,18 +960,18 @@ export default {
               token: thisToken
           })
           .then((response) => {
-              this.modal.loader = false;  
-              this.contact.response = this.$t('form.contact_form_complete');          
+              this.modal.loader = false;
+              this.contact.response = this.$t('form.contact_form_complete');
             })
           .catch((err) => {
-              this.modal.loader = false; 
+              this.modal.loader = false;
               //console.log(err);
               if(err.response){
                 this.formError = err.response.message;
               }
               //console.log(this.formError);
           })
-          
+
         },
         initReCaptcha() {
           var self = this;
@@ -1030,15 +1032,17 @@ export default {
               this.countDownCalc();
             }.bind(this), 1000);
         },
-        initCountDown(date) {
+        initCountDown(date = '') {
             var ts = Math.round((new Date()).getTime() );
+            date = new String(date)
             const [year, month, day] = [...date.split('-')]
             const monthIndex = month - 1 // remember that Date's contructor 2nd param is monthIndex (0-11) not month number (1-12)!
             var eventDate = new Date(year, monthIndex, this.promoDayLast) //year, monthIndex, day
             eventDate.setMonth(eventDate.getMonth() - this.promoMonths);
             this.promoDate = eventDate.toLocaleDateString();
             var ts2 = Math.round(eventDate.getTime() );
-            this.cd.count = ts2 - ts;
+            // this.cd.count = ts2 - ts;
+            this.cd.count = 100000;
             if(this.cd.count>0 && !this.cd.started && !this.$route.query.cd){
               this.countDownStart()
               this.cd.started = true;
@@ -1056,14 +1060,14 @@ export default {
     },
     mounted(){
         //this.$validator.localize('en');
-        this.getReferrence();  
-        this.getCountries(); 
+        this.getReferrence();
+        this.getCountries();
         this.getProduct();
         this.getAddons();
         this.syncImageArrays();
         //this.initReCaptcha();
         //this.getReCaptcha(); --- remove entire shit
-        
+
     },
     computed: {
       showBottomButtons(){
@@ -1147,7 +1151,7 @@ $btn-color: #ff5722!important;
 }
 .order-modal-body{
   background-size: cover;
-  background-image: linear-gradient(rgba(255,255,255,.80), rgba(255,255,255,.80)), url('/img/b01_bg.jpg'); 
+  background-image: linear-gradient(rgba(255,255,255,.80), rgba(255,255,255,.80)), url('/img/b01_bg.jpg');
   min-height: 100vh;
   background-attachment: fixed;
 }
@@ -1229,7 +1233,7 @@ $btn-color: #ff5722!important;
     height: 35px;
     cursor: pointer;
     margin-top: -17px;
-    
+
   }
 
   .uk-range::-moz-range-thumb {
@@ -1321,7 +1325,7 @@ $btn-color: #ff5722!important;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;;
-    flex:1;   
+    flex:1;
     position: relative;
     @media(max-width: 600px){
       margin-bottom: 30px;
