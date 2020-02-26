@@ -134,7 +134,7 @@
                   </div>
                 </owl-carousel>
               </client-only>
-            </div>
+            </div>7
           </section>
           <!---------------- / MAIN SECTIONS LOOP -------------------->
 
@@ -442,6 +442,7 @@ export default {
           //this.products.push(...response.data.data);
           if (response.data.data.variations) {
             this.product = response.data.data;
+            console.log(this.product);
             this.addons = this.product.addons;
             this.setInitialVariation();
             for (let i = 0, l = this.product.reviews.length; i < l; i++) {

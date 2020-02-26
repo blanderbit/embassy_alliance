@@ -1,14 +1,14 @@
 <template>
   <div>
-    <section class="b01">
+    <section class="b01" :style="{backgroundImage: 'url(./img/b01_bg.jpg)'}">
   <Nav/>
-  <div class="b01_in2">
+  <div class="b01_in2" >
     <div class="container">
       <div class="flex flex-end">
         <div class="col5 top-capture">
-          <p class="b01_in2_tx1">Smart Camp</p>
-          <p class="b01_in2_tx2">{{$t('smartCamp.b1.camp')}}</p>
-          <p class="b01_in2_tx3">{{$t('smartCamp.b1.dates')}}</p>
+          <p class="b01_in2_tx1">Embassy English</p>
+          <p class="b01_in2_tx2">{{$t('landing.b1.camp')}}</p>
+          <p class="b01_in2_tx3">{{$t('landing.b1.dates')}}</p>
           <p class="b01_in2_tx4">Cyberjaya, Malaysia</p>
           <p class="b01_in2_tx5">{{$t('landing.b1.age')}}: {{product.age_from}} - {{product.age_to}} {{$t('landing.b1.years')}}</p>
           <div class="b01_in2_sb1">
@@ -26,7 +26,7 @@
             </div>
           </div>
           <p class="b01_in2_txt5">
-            {{$t('smartCamp.b1.capture')}}
+            {{$t('landing.b1.capture')}}
           </p>
         </div>
       </div>
@@ -62,7 +62,7 @@
                     {{cd.hours}}
                   </p>
                   <p class="b03_in1_tx2 js-tmr_hour_txt">
-                     {{$t('hours')}}
+                    {{$t('hours')}}
                   </p>
                 </div>
                 <div class="b03_in3">
@@ -114,7 +114,6 @@
   </div>
 </section>
 
-<!-- COUNTERS -->
 <section class="b04">
   <div class="container">
     <div class="flex flex-justify">
@@ -133,45 +132,29 @@
     </div>
   </div>
 </section>
-<!-- /COUNTERS -->
 
-<section class="b05 goals">
+<section class="b05">
   <div class="container">
-    <div class="col6">
-        <p class="b01_in2_tx1">{{$t('smartCamp.goals_header')}}</p>
-    </div>
     <div class="flex flex-justify">
-      <div class="col12 goal-list">
-        <div class="b05_in2" v-for="(goal, index) in $t('smartCamp.goals')" :key="index">
-          <p class="b05_in2_tx1">{{goal.head}}</p>
-          <p class="b05_in2_tx2">{{goal.body}}</p>
+      <div class="col6">
+        <p class="b01_in2_tx1">{{$t('landing.b5.header')}}</p>
+        <p class="b05_in1_tx1">
+          {{$t('landing.b5.desc')}}
+        </p>
+        <div class="b05_in1_img">
+          <img src="/img/girls_bg.jpg" alt="">
         </div>
-
+      </div>
+      <div class="col5">
+        <div class="b05_in2" v-for="(b, index) in $t('landing.b5.items')" :key="index">
+          <p class="b05_in2_tx1">{{b.head}}</p>
+          <p class="b05_in2_tx2">{{b.body}}</p>
+        </div>
       </div>
     </div>
+
   </div>
 </section>
-
-<section class="b05_02 s_skills">
-  <div class="container">
-    <div class="b01_in2_tx1 col8">
-      {{$t('smartCamp.b5_2.header')}}
-    </div>
-    <div class="skill_list">
-      <!--loop-->
-      <div class="skill_list_item" v-for="(b,index) in $t('smartCamp.b5_2.items')" :key="index">
-        <div class="img-desc">
-        <img :src="b.img">
-        </div>
-        <span>{{b.head}}</span>
-        <p>{{b.body}}</p>
-      </div>
-      <!--/loop-->
-    </div>
-  </div>
-</section>
-
-<Prizes/>
 
 <section class="b05_02">
   <div class="container">
@@ -193,12 +176,14 @@
   </div>
 </section>
 
+<Prizes/>
+
 <section class="b07">
   <div class="container">
     <div class="b07_in1">
       <div class="flex flex-justify">
         <div class="col6 f-v-self-center">
-          <p class="b01_in2_tx1">{{$t('smartCamp.b7.header')}}</p>
+          <p class="b01_in2_tx1">{{$t('landing.b7.header')}}</p>
         </div>
         <div class="col5">
           <p class="b06_in2_tx2">
@@ -245,36 +230,34 @@
           <client-only>
           <!--<img src="/img/b06_img1_1.jpg" alt="">-->
           <owl-carousel :autoplay="false" :nav="true" :items="1" :dots="true" :navText='["", ""]' >
-            <div>
-              <div class="facility-c" style="background-image: url('/img/facility_bg_1.jpg')"></div>
-            </div>
-            <div>
-              <div class="facility-c" style="background-image: url('/img/facility_bg_2.jpg')"></div>
-            </div>
-            <div>
-              <div class="facility-c" style="background-image: url('/img/facility_bg_3.jpg')"></div>
-            </div>
-            <div>
-              <div class="facility-c" style="background-image: url('/img/facility_bg_4.jpg')"></div>
-            </div>
-            <div>
-              <div class="facility-c" style="background-image: url('/img/facility_bg_5.jpg')"></div>
-            </div>
-          </owl-carousel>
-          </client-only>
+      <div>
+        <div class="facility-c" style="background-image: url('/img/facility_bg_1.jpg')"></div>
+      </div>
+      <div>
+        <div class="facility-c" style="background-image: url('/img/facility_bg_2.jpg')"></div>
+      </div>
+      <div>
+        <div class="facility-c" style="background-image: url('/img/facility_bg_3.jpg')"></div>
+      </div>
+      <div>
+        <div class="facility-c" style="background-image: url('/img/facility_bg_4.jpg')"></div>
+      </div>
+      <div>
+        <div class="facility-c" style="background-image: url('/img/facility_bg_5.jpg')"></div>
+      </div>
+      </owl-carousel>
+      </client-only>
         </div>
         <div class="col5">
           <p class="b08_tx1">
-            {{$t('smartCamp.b8.s1.header')}}
-<!--            {{$t('landing.b8.s1.header')}}-->
+            {{$t('landing.b8.s1.header')}}
           </p>
           <p class="b08_tx2">
-            {{$t('smartCamp.b8.s1.description')}}
-<!--            {{$t('landingCommon.about_school_accommodation')}}-->
+            {{$t('landingCommon.about_school_accommodation')}}
           </p>
-<!--          <ul class="b08_ul">-->
-<!--            <li v-for="(b, index) in $t('landing.b8.s1.items')" :key="index">{{b.item}}</li>-->
-<!--          </ul>-->
+          <ul class="b08_ul">
+            <li v-for="(b, index) in $t('landing.b8.s1.items')" :key="index">{{b.item}}</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -283,42 +266,41 @@
         <div class="col5">
           <p class="b08_tx1">{{$t('landing.b8.s2.header')}}</p>
           <ul class="b08_ul">
-            <li v-for="(point, index) in $t('smartCamp.eduProgram')" :key="index">{{point.body}}</li>
+            <li v-for="(b, index) in $t('landing.b8.s2.items')" :key="index">{{b.item}}</li>
           </ul>
         </div>
         <div class="col6 no-pad-lt">
-          <img src="/img/study.jpg" alt="">
+          <img src="/img/b06_img2.jpg" alt="">
         </div>
       </div>
     </div>
-
     <div class="b08_row">
       <div class="flex flex-justify flex-v-center">
         <div class="col6 no-pad-rt">
-          <img src="/img/entertainment.jpg" alt="">
+          <img src="/img/b06_img3.jpg" alt="">
         </div>
         <div class="col5">
           <p class="b08_tx1">{{$t('landing.b8.s3.header')}}</p>
           <ul class="b08_ul">
-            <li v-for="(point, index) in $t('smartCamp.entProgram')" :key="index">{{point.body}}</li>
+            <li v-for="(b, index) in $t('landing.b8.s3.items')" :key="index">{{b.item}}</li>
           </ul>
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
+<!-- MAIN VIDEO -->
 <section class="b09">
 <client-only>
-<silentbox-single src="https://www.youtube.com/watch?v=LT-p7gmHDfU" :autoplay=autoplay description="Smart Camp">
+<silentbox-single src="https://www.youtube.com/watch?v=8CvTwwAZmK0" :autoplay=autoplay description="Embassy English Camp">
     <div class="container">
       <div class="b09_in1">
         <div class="flex1 flex-v-center">
           <div class="b09_in1_plb">
           </div>
           <p class="b09_in1_tx">
-            {{$t('smartCamp.b9.header')}}
+            {{$t('landing.b9.header')}}
           </p>
         </div>
       </div>
@@ -326,26 +308,31 @@
 </silentbox-single>
 </client-only>
 </section>
+<!-- /MAIN VIDEO -->
 
+
+<!-- PRICE INCLUDES -->
 <section class="b10">
   <div class="container">
     <p class="b01_in2_tx1">{{$t('landing.b10.header')}}:</p>
     <div class="flex flex-wrap">
-      <div class="col6" v-for="(point, index) in $t('smartCamp.priceIncludes')" :key="index">
+      <div class="col6" v-for="(b, index) in $t('landing.b10.items')" :key="index">
         <div class="b05_in2">
-          <p class="b05_in2_tx1">{{point.head}}</p>
-          <p class="b05_in2_tx2">{{point.body.replace('PROMO_DATE',promoDate)}}</p>
+          <p class="b05_in2_tx1">{{b.head}}</p>
+          <p class="b05_in2_tx2">{{b.body}}</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- /PRICE INCLUDES -->
+
 
 <!-- Reasons to join Desktop -->
 <section class="b10_02 hide-600">
   <div class="container">
     <p class="b01_in2_tx1">
-      {{$t('landing.reasons_to_join').length}} {{$t('smartCamp.b10_2.header')}}
+      {{$t('landing.reasons_to_join').length}} {{$t('landing.b10_2.header')}}
     </p>
     <div class="b10_02_flex">
       <div v-for="(reason,index) in $t('landing.reasons_to_join')" :key="index">
@@ -361,7 +348,7 @@
 <section class="b10_02 below-600">
   <div class="container">
     <p class="b01_in2_tx1">
-      {{$t('landing.reasons_to_join').length}} {{$t('smartCamp.b10_2.header')}}
+      {{$t('landing.reasons_to_join').length}} {{$t('landing.b10_2.header')}}
     </p>
     <div class="b10_02_flex">
     <vk-accordion :items="$t('landing.reasons_to_join')" :indexing="true" />
@@ -373,13 +360,13 @@
 <!-- video-reviews -->
 <section class="b11">
   <div class="container">
-    <p class="b01_in2_tx1">{{$t('smartCamp.b11.header')}}</p>
+    <p class="b01_in2_tx1">{{$t('landing.b11.header')}}</p>
     <div class="b11_in1">
       <div class="flex flex-justify">
 
-        <div class="col0" v-for="(b,index) in $t('smartCamp.b11.items')" :key="index">
+        <div class="col0" v-for="(b,index) in $t('landing.b11.items')" :key="index">
           <div class="thumb-wrap">
-            <iframe width="560" height="315" :src="b.src" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" :src="b.src" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
 
@@ -397,28 +384,24 @@
       <a href="javascript:void(0)"
           class="btn2"
           @click="toggleReviews()">
-          {{$t('landing.b12.button')}}
-      </a>
+          {{$t('landing.b12.button')}}</a>
     </div>
   </div>
 </section>
 <!-- /reviews gallery -->
 
-<!-- footer summary -->
 <section class="b13">
   <div class="container">
-    <img class="sc_comment_profile" src="/img/seo.png" />
-    <p class="sc_name">{{$t('smartCamp.b13.header')}}</p>
-    <p class="sc_role">{{$t('smartCamp.b13.header2')}}</p>
-    <p class="sc_tx1">{{$t('smartCamp.b13.desc')}}</p>
+    <p class="b01_in2_tx1">{{$t('landing.b13.header')}}</p>
+    <p class="b13_tx1">{{$t('landing.b13.desc')}}</p>
   </div>
 </section>
-<!-- /footer summary -->
 
 <section class="b14" v-show="showBottomButtons">
   <div class="flex1 flex-justify">
     <a href="javascript:void(0)"
-        class="btn1" @click="showPrice=false;openOrderForm($event)">
+        class="btn1"
+        @click="showPrice=false;openOrderForm($event)">
         {{$t('landingCommon.buttons.make_order')}}
     </a>
     <a href="javascript:void(0)"
@@ -430,31 +413,34 @@
 </section>
 
 
+<!------------------------ @@@@@@ -------------------------------->
 
-<!-------------------------------------------------- MODALS ------------------------------------------------>
+<!------------------------ MODALS -------------------------------->
+
 <client-only>
 <!------ REVIEWS ------->
-<vk-modal size="container" :show.sync="modal.reviews" id="b-reviews">
+<vk-modal size="container" :show.sync="modal.reviews" id="f-reviews">
   <vk-modal-close @click="toggleReviews()"></vk-modal-close>
-  <owl-carousel :autoplay="false" :nav="true" :items="1" :dots="false">
-      <div v-for="(item, index) in reviews.tmpImages" :key="index" class="reviews">
-        <div class="items_tx1" v-if="item.comment && item.name">
-          <p class="">{{item.name}}</p>
-          <p class="">{{item.comment}}</p>
-        </div>
-          <div class="reviews__holder">
-            <div class="reviews__holder_img-container">
-              <img class="review" :src="item.src" >
-            </div>
+    <owl-carousel :autoplay="false" :nav="true" :items="1" :dots="false">
+        <div v-for="(item, index) in reviews.tmpImages" :key="index" class="reviews">
+          <div class="items_tx1" v-if="item.comment && item.name">
+            <p class="">{{item.name}}</p>
+            <p class="">{{item.comment}}</p>
           </div>
-      </div>
-  </owl-carousel>
+            <div class="reviews__holder">
+              <div class="reviews__holder_img-container">
+                <img class="review" :src="item.src" >
+              </div>
+
+            </div>
+        </div>
+    </owl-carousel>
 </vk-modal>
-<!------ / REVIEWS ------->
+<!------/REVIEWS ----->
 
-
-<!----- INQUIRE MODAL ---->
+<!-- ORDER --->
 <vk-modal-full center :show="modal.makeOrder">
+
   <vk-grid collapse class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle order-modal-body" >
     <div>
         <div class="uk-width-auto@m"></div>
@@ -483,29 +469,25 @@
   <div v-if="simpleForm && showPrice">
     <div class="product-description">
       <h2>{{$t('landingCommon.modals.inquire.header', { name: product.name})}}</h2>
-            <div class="price-listing" v-for="(variation) in product.variations" :key="variation.id">
-              <div class="l-price-name"><span class="l-price">$ {{(variation.price*1).toFixed(0)}}</span>
-              <span class="l-name"> {{variation.name}}</span></div>
+            <div class="modal-price-listing" v-for="(variation) in product.variations" :key="variation.id">
+              <span class="l-price">$ {{(variation.price*1).toFixed(0)}}</span>
+              <span class="l-name"> {{variation.name}}</span>
               <span class="l-desc">{{variation.i18n_name[locale]}}</span>
             </div>
       <h3>{{$t('landingCommon.modals.inquire.header2')}}:</h3>
       <div class="flex flex-wrap ">
           <ul class="b08_ul modal-included-list">
-            <li v-for="(b, index) in $t('smartCamp.modals.inquire.items')" :key="index">{{b.body}}</li>
+            <li v-for="(b, index) in $t('landing.modals.inquire.items')" :key="index">{{b.body}}</li>
           </ul>
       </div>
 
       <div class="flex1 flex-center mt-md">
-          <a href="javascript:void(0)"
-              class="btn1 btn1-form"
-              @click="showPrice=false">
-              {{$t('form.send_request')}}
-          </a>
+        <a href="javascript:void(0)" class="btn1 btn1-form" @click="showPrice=false">{{$t('form.send_request')}}</a>
       </div>
+
     </div>
   </div>
-
-      <!---||---- IF JUST A SIMPLE CONTACT FORM -----||--->
+  <!-- IF JUST A SIMPLE CONTACT FORM -->
   <div v-if="simpleForm && !showPrice" class="contact-form">
       <div v-if="modal.loader" class="inner loading">
        <vk-spinner ratio="4.5"></vk-spinner>
@@ -620,19 +602,21 @@
 </vk-modal-full>
 </client-only>
 
-  <!----------------------------------- / END OF MODALS ----------------------------------------->
+  <!-- END OF MODALS -->
   </div>
 </template>
 
 <script>
+//import { fireDb } from '~/plugins/firebase.js';
+//import axios from 'axios';
 import Nav from '~/layouts/partials/nav';
 import OrderForm from '~/components/OrderForm'
 import OrderStepper from '~/components/OrderStepper'
 import Comments from '~/components/Comments'
-import referralMixin from '~/mixins/referralMixin.js'
-import Prizes from '~/components/Prizes'
-import generalMixin from '~/mixins/generalMixin.js'
 import VkAccordion from '~/components/VkAccordion'
+import Prizes from '~/components/Prizes'
+import referralMixin from '~/mixins/referralMixin.js'
+import generalMixin from '~/mixins/generalMixin.js'
 
 const MILLISECONDS_SECOND = 1000;
 const MILLISECONDS_MINUTE = 60 * MILLISECONDS_SECOND;
@@ -646,7 +630,7 @@ export default {
     auth: false,
     data() {
       return {
-            comments: this.$t('smartCamp.comments'),
+        comments: this.$t('landing.comments'),
             promoDayLast: 30,
             promoMonths: 3, //how many months before will be promo
             locale: this.$i18n.locale,
@@ -657,66 +641,50 @@ export default {
               tmpImages: [
               ],
               images:[
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_3.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_4.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_5.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_6.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_7.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_8.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_1.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_2.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_10.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_11.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_12.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_13.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_14.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_15.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_16.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_17.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_18.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_19.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_20.jpg',
-                },
-                {
-                  src:'/img/smart_camp_reviews/rev_sc_21.jpg',
-                },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_1.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_2.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_3.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_4.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_5.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_6.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_7.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_8.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_9.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_10.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1_11.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_1.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_2.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_3.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_4.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_5.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_6.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_7.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_8.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_9.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_10.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_11.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_12.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_13.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_14.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_15.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_16.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_17.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_18.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_19.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_20.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_21.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_22.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_23.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_24.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_25.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_26.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_27.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_28.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_29.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_30.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_31.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_32.jpg', },
+                 { src:'/img/embassy_english_reviews/rev_ea_33.jpg', },
               ],
               index: null
             },
@@ -735,6 +703,7 @@ export default {
               response: ''
             },
             writeSuccessful: false,
+            //userData: {},
             variationTemplate: {
                   id: '',
                   name: 'Please Select The Camp first',
@@ -792,53 +761,57 @@ export default {
                 },
             },
             cd:{
-              count: 0,
-              days: '00',
-              hours: '00',
-              minutes: '00',
-              seconds: '00',
-              counting: false,
-              endTime: 0,
-              started: false,
-              enable: true
+                count: 0,
+                days: '00',
+                hours: '00',
+                minutes: '00',
+                seconds: '00',
+                counting: false,
+                endTime: 0,
+                started: false,
+                enable: true
             }
         }
     },
     head() {
+      //const i18nSeo = this.$nuxtI18nSeo()
         return {
-            title: this.$t('smartCamp.title'),
+            title: this.$t('landing.title'),
             meta: [
-                    { name: 'description', content: this.$t('smartCamp.description')},
-                    { name: 'keywords', content: 'Smart camp 2019'},
+                    { name: 'description', content: this.$t('landing.description')},
+                    { name: 'keywords', content: 'Embassy English camp 2019'},
                 ]
             }
     },
     methods: {
         toggleReviews(){
+          //this.syncImageArrays();
           this.modal.reviews = !this.modal.reviews;
           this.$store.commit('setStickyNav',false);
         },
         syncImageArrays(){
           if( this.reviews.tmpImages.length != this.reviews.images.length){
-            for(let i=0,len=this.reviews.images.length;len>i;i++){
-            //for(let i=0,len=5;len>i;i++){
+            for(let i=0;this.reviews.images.length>i;i++){
               if(!this.reviews.tmpImages[i]){
                 this.reviews.tmpImages.push(this.reviews.images[i])
               }
             }
           }
+          ////console.log(this.reviews.images)
         },
         async getReCaptcha(){
             await this.$recaptcha.init()
             //console.log('from recapthcha init')
         },
         async getProduct(){
+          // debugger
           var res = this.$route.path.split("/");
           //console.log(res);
           var slug = res[res.length - 1]; //this.$nuxt.$route.name ||
-           await this.$axios.get('/products/slug/' + slug)
+           await this.$axios.get('/products/slug/' +  slug + "/" + this.$i18n.locale)
                 .then((response) => {
-                  //console.log(slug + ":" + response.data.data)
+                  // debugger
+                  //console.l1og(slug + ":" + response.data.data)
                     //this.products.push(...response.data.data);
                     if(response.data.data.variations){
                       this.product = response.data.data;
@@ -849,7 +822,8 @@ export default {
 
                 })
                 .finally(()=>{
-                    this.initCountDown(this.product.starts_at || new Date());
+                  // debugger
+                    this.initCountDown(this.product.starts_at);
                     //console.log("starts at: " + this.product.starts_at)
                 })
         },
@@ -867,10 +841,9 @@ export default {
 
         setInitialVariation(){
           this.order.variationID = this.product.variations[this.product.variations.length - 1].id;
-          ////console.log(this.order.variationID);
         },
         openOrderForm(e){
-          e.stopPropagation()
+            e.stopPropagation()
             this.modal.makeOrder = true;
             this.$store.commit('setStickyNav',false);
             this.$store.commit('setstickyNavDisabled',true);
@@ -879,39 +852,18 @@ export default {
             this.modal.makeOrder = false;
             this.$store.commit('setstickyNavDisabled',false);
         },
-        // getUserInfo(){
-        //     const url = 'https://ipinfo.io?token=f63b46f8a5fb0e';
-        //     axios.get(url)
-        //     .then(response => {
-        //     //const items = JSON.parse(data.response).Items
-        //     if(response.data){
-        //         //console.log(response.data);
-        //         let key
-        //         for(key in response.data){
-        //         if (response.data.hasOwnProperty(key)){
-        //             this.userData[key] = response.data[key];
-        //         }
-        //         }
-        //     }
-        //         //console.log(this.userData);
-        //     })
-        //     .finally(() => {
-        //         this.writeUserToFirestore();
-        //     });
-        // },
-
         async onContactFormSubmit() {
           let el = document.getElementById("contactForm");
           if(!el.classList.contains("form-verification")){
             el.className += "form-verification";
           }
 
-          this.$validator.validate()
+          this.$validator.validateAll()
             .then(valid => {
               ////console.log('Validation: ' + valid);
-              //if (!valid) {
+              if (!valid) {
               //  return null;
-              //}
+              }
             });
 
           if( !this.contact.firstName ||
@@ -924,23 +876,32 @@ export default {
               this.errors.has('ct_email') ||
               this.errors.has('ct_phone') ||
               this.errors.has('ct_age')){
+                //console.log('ERROR: form is not filled up');
                 return null;
               }
           this.modal.loader = true;
           let tknPass = true;
           let thisToken = '';
+
+          //console.log('reCaptcha check..');
+
           await this.$recaptcha('login').then((token) => {
               ////console.log(token) // Will print the token
               if(token.length < 30){
                 this.modal.loader = false;
                 this.formError = "reCatcha error has occured";
                 tknPass = false;
+                //console.log('ERROR: reCatcha Problems');
                 return null;
               } else {
                 thisToken = token;
               }
           });
+
+          //console.log('reCaptcha passed..');
+
           if(!tknPass){
+            //console.log('ERROR: reCatcha token Problems');
             return null;
           }
           let uuid = this.$cookies.get('ea-uuid') || '';
@@ -1034,20 +995,21 @@ export default {
         },
         initCountDown(date = '') {
             var ts = Math.round((new Date()).getTime() );
-            date = new String(date)
+            console.log(ts)
+          date = new String(date)
             const [year, month, day] = [...date.split('-')]
             const monthIndex = month - 1 // remember that Date's contructor 2nd param is monthIndex (0-11) not month number (1-12)!
             var eventDate = new Date(year, monthIndex, this.promoDayLast) //year, monthIndex, day
             eventDate.setMonth(eventDate.getMonth() - this.promoMonths);
             this.promoDate = eventDate.toLocaleDateString();
             var ts2 = Math.round(eventDate.getTime() );
-            // this.cd.count = ts2 - ts;
-            this.cd.count = 100000;
+            this.cd.count = ts2 - ts;
+            // this.cd.count = 1000000;
             if(this.cd.count>0 && !this.cd.started && !this.$route.query.cd){
               this.countDownStart()
               this.cd.started = true;
             }
-        }
+        },
     },
     //components: { carousel },
     components: {
@@ -1065,8 +1027,9 @@ export default {
         this.getProduct();
         this.getAddons();
         this.syncImageArrays();
+        //this.reviews.tmpImages.push(this.reviews.images[0])
+        //this.reviews.tmpImages.push(this.reviews.images[1])
         //this.initReCaptcha();
-        //this.getReCaptcha(); --- remove entire shit
 
     },
     computed: {
@@ -1077,18 +1040,13 @@ export default {
           return true;
         }
       }
-  },
+    },
 }
 </script>
 
 <style lang="scss" scoped>
-$desc-text: #636363 !important;
-$btn-color: #ff5722!important;
-
-.b01 {
-    background: url(/img/sc_bg1_1.jpg) no-repeat center top;
-    background-size: cover;
-}
+$desc-text: #636363;
+$btn-color: #ff5722;
 .col-6-modal{
   width: 50%;
   @media(max-width: 700px){
@@ -1133,10 +1091,10 @@ $btn-color: #ff5722!important;
       &.l-price{
         font-size: 24px;
         font-weight: 400;
-        color: $btn-color;
+        color: !important;
         padding-right: 60px;
         @media(max-width: 700px){
-          padding-right: 26px;
+          padding-right: 30px;
         }
       }
       &.l-name{
@@ -1188,8 +1146,7 @@ $btn-color: #ff5722!important;
     @media(max-width: 600px){
       width: 100%;
       min-height: 0px !important;
-      //height: auto!important;
-      height: 360px!important;
+      //height: 360px!important;
     }
   }
   .silentbox-single {
@@ -1244,6 +1201,18 @@ $btn-color: #ff5722!important;
   }
 }
 
+.facility-c{
+  height: 260px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media(min-width: 900px){
+    height: 420px;
+  }
+  @media(min-width: 1200px){
+    height: 680px;
+  }
+}
 .loading{
     margin-top: 40%;
     display: flex;
@@ -1303,7 +1272,7 @@ $btn-color: #ff5722!important;
   img{
     height: 120px;
     @media(max-width: 600px){
-      height: 80px;
+      height: 80ph;
     }
   }
 }
@@ -1311,115 +1280,18 @@ $btn-color: #ff5722!important;
   .b01_in2_tx1 {
     font-size: 42px;
     font-weight: 700;
-  }
-}
-
-
-
-.skill_list{
-  display: flex;
-   @media(max-width: 600px){
-     flex-direction: column;
-   }
-  .skill_list_item{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;;
-    flex:1;
-    position: relative;
     @media(max-width: 600px){
-      margin-bottom: 30px;
+      font-size: 22px;
       text-align: center;
     }
-    &:not(:last-of-type){
-      @media(min-width: 600px){
-        margin-right: 10px;
-      }
-    }
-    span{
-      font-size: 18px;
-      font-weight: 700;
-      text-align: left;
-      padding-left: 16px;
-      display: block;
-      padding-top: 20px;
-      @media(max-width: 600px){
-        //text-align: left;
-        text-align: center;
-        padding-left:0;
-      }
-    }
-    p{
-      padding: 0 16px;
-      margin-top: 14px;
-      text-align: justify;
-      line-height: 1.4;
-      word-wrap: break-word;
-      @media(max-width: 600px){
-        padding: 0;
-        line-height: 1.5;
-      }
-    }
-    .img-desc{
-      background: orange;
-      position: relative;
-      img{
-        opacity: 1;
-        transition: all .3s ease-in-out;
-      }
-      p{
-        position: absolute;
-        opacity: 0;
-        transition: all .3s ease-in-out;
-        padding: 20px;
-        color: white!important;
-        top: 0;
-        font-size: 16px;
-      }
-      &:hover{
-        img{
-          opacity: 0.5;
-        }
-        p{
-          opacity: 1;
-        }
-      }
-    }
   }
-}
-.b09 {
-    padding: 200px 0;
-    background: linear-gradient(rgba(32, 142, 114, 0.55), rgba(32, 142, 114, 0.85)), url(/img/sc_vd_bg.jpg) no-repeat center;
-    background-size: cover;
-    cursor: pointer;
+  .b13_tx1{
     @media(max-width: 600px){
-      padding: 100px 0;
+      font-size: 18px;
+      text-align: center;
+      line-height: 1.4;
     }
+  }
 }
-.b13{
-  padding: 0 0 60px;
-  position: relative;
-  .sc_comment_profile{
-    position: relative;
-    margin-top: -30px;
-    height: 120px;
-  }
-  .sc_name{
-    color: white!important;
-    font-size: 22px;
-    font-weight: 700;
-  }
-  .sc_role{
-    color: white!important;
-    font-size: 18px;
 
-  }
-  .sc_tx1{
-    display: inline-block;
-    max-width: 900px;
-    font-size: 18px;
-    color: white!important;
-    line-height: 1.4;
-  }
-}
 </style>
