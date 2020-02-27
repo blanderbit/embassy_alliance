@@ -67,6 +67,9 @@
           <a href="javascript:void(0)" @click="showPDP=true">{{$t('nav.personal_data_greement')}}</a>
         </div>
         <div class="social-buttons">
+          <a @click="$store.commit('setTelegramPopub', !$store.getters['getTelegramPopub'])" target="_blank">
+            <img src="/img/icons/telegram.svg" />
+          </a>
           <a :href="$store.state.socialMedia.facebook" target="_blank">
             <img src="/img/icons/fb-icon.svg" />
           </a>

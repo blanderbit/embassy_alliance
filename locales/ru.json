@@ -6,6 +6,11 @@
     "select": "Выбрать",
     "browse": "Просмотр"
   },
+  "telegram":{
+    "telegram_account": "Пожалуйста введите ник юзера",
+    "telegram_ok": "Мы напишем вам в телеграме",
+    "telegram_close": "Закрыть"
+  },
   "nav": {
     "our_camps": "Наши лагеря",
     "about_us": "О компании",

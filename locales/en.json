@@ -16,6 +16,11 @@
         "english": "English version",
         "russian": "Russian version"
     },
+    "telegram":{
+        "telegram_account": "Please enter user nickname",
+        "telegram_ok": "We will write tou to telegram",
+        "telegram_close": "Close"
+    },
     "home": {
         "title": "Welcome",
         "introduction": "This is an introduction in Russian."

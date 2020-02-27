@@ -10,6 +10,9 @@ export const getters = {
 
   loggedInUser(state) {
     return state.auth.user
+  },
+  getTelegramPopub(state) {
+    return state.telegramPopub
   }
 }
 // export const actions = {
@@ -24,7 +27,7 @@ export const getters = {
 //         }
 //       }
 //       commit('setAuth', auth)
-//     },  
+//     },
 // }
 
 
@@ -32,6 +35,7 @@ export const state = () => ({
   locales: ['en', 'ru'],
   locale: 'en',
   auth: null,
+  telegramPopub: false,
   imgURL: process.env.IMG_URL,//'http://ea-education.local'
   baseURL: process.env.BASE_URL,
   orderSending: false,
@@ -108,6 +112,9 @@ export const mutations = {
   setStickyNav(state, stickyNav){
     state.stickyNav = stickyNav
   },
+  setTelegramPopub(state, telegramPopub){
+    state.telegramPopub = telegramPopub
+  },
   setstickyNavDisabled(state, stickyNavDisabled){
     state.stickyNavDisabled = stickyNavDisabled
   },
@@ -147,6 +154,6 @@ export const mutations = {
 }
 
 export const actions = {
-  
+
 }
 
