@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="08b379c4-3da2-4817-8ea6-d127d2cb20fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_lang/_country/_slug.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_lang/_country/_slug.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_lang/english_language_camp_malaysia.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_lang/english-language-camp-malaysia-2020-july.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_lang/english_smart_camp_malaysia.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_lang/english-smart-camp-malaysia-2020-july.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/english_language_camp_malaysia.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/english-language-camp-malaysia-2020-july.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/english_smart_camp_malaysia.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/english-smart-camp-malaysia-2020-july.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_lang/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_lang/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +58,9 @@
       <workItem from="1582445955770" duration="2008000" />
       <workItem from="1582462907757" duration="26000" />
       <workItem from="1582670521418" duration="4166000" />
-      <workItem from="1582724833402" duration="4764000" />
+      <workItem from="1582724833402" duration="5959000" />
+      <workItem from="1582789560314" duration="130000" />
+      <workItem from="1582875849579" duration="1280000" />
     </task>
     <servers />
   </component>
@@ -74,5 +72,13 @@
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
     <state x="2606" y="1419" width="559" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.1080.1920.1080/1920.1080.1920.1080/1920.0.1920.1080@1920.1080.1920.1080" timestamp="1582726696309" />
+    <state x="743" y="297" width="424" height="484" key="FileChooserDialogImpl" timestamp="1582789688890">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="743" y="297" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1582789688890" />
+    <state x="616" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1582789678818">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="616" y="366" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1582789678818" />
   </component>
 </project>

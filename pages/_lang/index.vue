@@ -384,10 +384,10 @@ export default {
         store.commit("setCountries", responseCountry.data);
         store.commit("setPastProducts", responseProductsPast.data.data);
         store.commit("setProducts", responseProducts.data.data);
-        console.timeEnd('1')
       }).finally(() => {
         let arr = [];
         for (let i = 0, lth = store.state.products.length; i < lth; i++) {
+          console.log(store.state.products[i].variations[0])
           let y = {
             "@context": "https://www.schema.org",
             "@type": "product",
@@ -405,7 +405,7 @@ export default {
             offers: {
               "@type": "Offer",
               priceCurrency: "USD",
-              price: store.state.products[i].variations[0].price,
+              price: (store.state.products[i].variations[0] && store.state.products[i].variations[0].price) || '',
               availability: "http://schema.org/InStock"
             }
           };
